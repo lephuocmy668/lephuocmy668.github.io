@@ -8,3 +8,5 @@ docker run --rm -it -v "/root/letsencrypt/log:/var/log/letsencrypt" -v "/etc/ngi
 
 
 docker run --rm -it -v "/root/letsencrypt/log:/var/log/letsencrypt" -v "/etc/nginx/sites-available/tiktok-blog/dist:/var/www/" -v "/etc/letsencrypt:/etc/letsencrypt" -v "/root/letsencrypt/lib:/var/lib/letsencrypt" lojzik/letsencrypt certonly --webroot --webroot-path /var/www --email lephuocmy668@gmail.com -d moliza.vn
+
+x

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-08-31T11:21:04-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 2.2 - Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 2.2 - Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã tìm hiểu một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi gỉai quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào và các Contexts đó có quan hệ ra sao, vậy chúng ta sẻ kết hợp chúng như thế nào, bài này chúng ta cùng tìm hiểu về các các Bounded Context được tích hợp với nhau, cùng giải đáp một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-02T03:25:26-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 2.2 - Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 2.2 - Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nàp? 
+Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Đâu là ranh giới của các Bounded Contexts?&lt;/li&gt;
   &lt;li&gt;Có những mối quan hệ nào giữa các Bounded Contexts?&lt;/li&gt;
   &lt;li&gt;Làm thế nào để các Bounded Context giao tiếp với nhau về mặt kĩ thuật?&lt;/li&gt;
-  &lt;li&gt;Làm thế nào để đối phó với những thay đổi không mong muốn xãy ra ở upstream context? Làm thế nào để không gây rắc rối cho các downstream context?&lt;/li&gt;
+  &lt;li&gt;Làm thế nào để đối phó với những thay đổi không mong muốn xãy ra ở Upstream Context? Làm thế nào để các Upstream Context không gây rắc rối cho các Downstream Context?&lt;/li&gt;
   &lt;li&gt;Làm thế nào để tổ chức ánh xạ ngữ nghĩa các Domain Model giữa các Bounded Context cũng như làm thế nào để translate các thuật ngữ trong ubiquitous language sang các ngôn ngữ khác.&lt;/li&gt;
-  &lt;li&gt;Các principles trong việc tổ chức integrate các Bounded Context là gì?&lt;/li&gt;
-  &lt;li&gt;Những giá trị lớn lao khi tổ chức, xây dựung tốt các Context Maps(Integrate chúng một cách dễ dàng, tính cohesion cao mà lại low coupling, dễ duy trì, mở rộng, tạo nguổn dữ liệu real time cho việc mining, phân tích,…)&lt;/li&gt;
-  &lt;li&gt;Trong các dạng Cohesion dưới đây, dạng nào là nên tránh “nhất” trong lập trình? (chỉ 1 lựa chọn)(Coincidental, cohesion, Logical cohesion, Temporal cohesion, Sequential cohesion)&lt;/li&gt;
+  &lt;li&gt;Các Principles trong việc tổ chức integrate các Bounded Context là gì?&lt;/li&gt;
+  &lt;li&gt;Những giá trị lớn lao khi tổ chức, xây dựng tốt các Context Maps(Integrate chúng một cách dễ dàng, tính cohesion cao mà lại low coupling, dễ duy trì, mở rộng, tạo nguổn dữ liệu real time cho việc mining, phân tích,…)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Câu trả lời cho những câu hỏi trên sẻ được tổng hợp trong một thứ gọi là context map. Một context map có thể được vẻ lại giống ví dụ dưới đây:&lt;/p&gt;
-&lt;Ảnh&gt;
+&lt;p&gt;Câu trả lời cho các câu hỏi trên sẻ được tổng hợp trong một thứ gọi là Context Map.&lt;/p&gt;
 
-### Mối quan hệ giữa các Bounded Context:
-Trong các hệ thống lớn, phức tạp, hầu hết các Bounded Context sẽ có một số mối quan hệ với các Bounded Context khác. Việc xác định các mối quan hệ này có tầm quan trọng không chỉ về mặt kỹ thuật (các hệ thống sẽ giao tiếp với nhau như thế nào) mà còn cả cách chúng được phát triển (các team sẽ giao tiếp với nhau như thế nào).
+&lt;h3 id=&quot;mối-quan-hệ-giữa-các-bounded-context&quot;&gt;Mối quan hệ giữa các Bounded Context:&lt;/h3&gt;
+&lt;p&gt;Trong các hệ thống lớn, phức tạp, hầu hết các Bounded Context sẽ có một số mối quan hệ với các Bounded Context khác. Việc xác định các mối quan hệ này có tầm quan trọng không chỉ về mặt kỹ thuật (các hệ thống sẽ giao tiếp với nhau như thế nào) mà còn cả cách chúng được phát triển (các team sẽ phối hợp với nhau ra sao).&lt;/p&gt;
 
-Cách đơn giản nhất để xác định mối quan hệ giữa các Bounded Context là phân loại các Bounded Context thành các Upstream và Downstream contexts. Hãy tưởng tượng các contexts như các thành phố bên cạnh một dòng sông, các thành phố ở thượng nguồn sẻ đổ những gì muốn truyền cho các thành phố ở hạ lưu xuống sông, những thứ đó sẻ được đưa đến các thành phố ở hạ lưu và họ chỉ cần vớt lên từ dưới sông. 
+&lt;p&gt;Cách phổ biến nhất để xác định mối quan hệ giữa các Bounded Context là phân loại các Bounded Context thành các Upstream và Downstream contexts. Điều đó tương tự như hình ảnh các thành phố bên cạnh một dòng sông, các thành phố ở thượng nguồn(Upstream) sẻ đổ những gì muốn truyền cho các thành phố ở hạ lưu(Downstream) xuống sông, những thứ đó sẻ được đưa đến các thành phố ở hạ lưu và họ chỉ cần vớt lên từ dưới sông.&lt;/p&gt;
 
-Việc áp thành các upstream và downstream contexts sẻ có ưu và nhược điểm riêng của nó. Một upstream context không phụ thuộc vào bất kỳ context nào khác, nghĩa là nó sẻ tự do phát triển theo bất kỳ hướng nào. Tuy nhiên, hệ quả của bất kỳ thay đổi nào ở Upstream Context cũng có thể gây ảnh hưởng nghiêm trọng đối với các Downstream Context. Một Downstream Context bị hạn chế bởi sự phụ thuộc của nó vào Upstream Context nhưng lại không phãi quá lo lắng vì những thay đổi đối với các Downstream Context, điều này giúp các nhà developer tại Downstream Context sẻ tự do hơn các developer tại Upstream Context muốn làm gì cũng phãi nhìn trước ngó sau.
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-#### Partnership
-#### Shared Kernel
-#### Customer-Supplier
+&lt;p&gt;Tuy nhiên việc chia thành các Upstream và Downstream contexts sẻ có ưu và nhược điểm riêng của nó. Một Upstream Context sẻ không phụ thuộc vào bất kỳ Context nào khác, nó sẻ tự do phát triển theo bất kỳ hướng nào. Tuy nhiên, hệ quả của bất kỳ thay đổi nào ở Upstream Context cũng có thể gây ảnh hưởng nghiêm trọng đối với các Downstream Context. Một Downstream Context bị hạn chế bởi sự phụ thuộc của nó vào Upstream Context nhưng lại không phãi quá lo lắng vì những thay đổi của nó sẻ gây ảnh hướng cho các Downstream Context, điều này giúp các nhà developer tại Downstream Context sẻ tự do hơn các developer tại Upstream Context muốn làm gì cũng phãi nhìn trước ngó sau.&lt;/p&gt;
 
-Updating......
-&lt;/Ảnh&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="ddd" /><category term="domain-driven-design" /><category term="domain-driven-development" /><category term="microservice" /><summary type="html">Bài trước chúng ta đã tìm hiểu một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi gỉai quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào và các Contexts đó có quan hệ ra sao, vậy chúng ta sẻ kết hợp chúng như thế nào, bài này chúng ta cùng tìm hiểu về các các Bounded Context được tích hợp với nhau, cùng giải đáp một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau: Đâu là ranh giới của các Bounded Contexts? Có những mối quan hệ nào giữa các Bounded Contexts? Làm thế nào để các Bounded Context giao tiếp với nhau về mặt kĩ thuật? Làm thế nào để đối phó với những thay đổi không mong muốn xãy ra ở upstream context? Làm thế nào để không gây rắc rối cho các downstream context? Làm thế nào để tổ chức ánh xạ ngữ nghĩa các Domain Model giữa các Bounded Context cũng như làm thế nào để translate các thuật ngữ trong ubiquitous language sang các ngôn ngữ khác. Các principles trong việc tổ chức integrate các Bounded Context là gì? Những giá trị lớn lao khi tổ chức, xây dựung tốt các Context Maps(Integrate chúng một cách dễ dàng, tính cohesion cao mà lại low coupling, dễ duy trì, mở rộng, tạo nguổn dữ liệu real time cho việc mining, phân tích,…) Trong các dạng Cohesion dưới đây, dạng nào là nên tránh “nhất” trong lập trình? (chỉ 1 lựa chọn)(Coincidental, cohesion, Logical cohesion, Temporal cohesion, Sequential cohesion)</summary></entry><entry><title type="html">Xàm xí về Domain Driven Design - Part 2.1 - Strategic Design - SubDomain - Bounded Context</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-1/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 2.1 - Strategic Design - SubDomain - Bounded Context" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-1</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-1/">&lt;p&gt;Ở bài trước mình đã phần nào đưa ra ý kiến cá nhân về định nghĩa, mục đích sử dụng domain driven design trong việc phát triển các enterprise system. Trong bài này mình tiếp tục nói về công cụ của quan trọng nhất của DDD - Strategic Design, sự thiết yếu của Strategic Design, nói về approach để chúng ta xử lí một hệ thống phức tạp, về approach để chia nhỏ hệ thống bên cạnh đó phần nào làm rõ các khái niệm như Ubiquitous Language, Bounded Context, Subdomain,….&lt;/p&gt;
+&lt;h4 id=&quot;partnership&quot;&gt;Partnership&lt;/h4&gt;
+&lt;h4 id=&quot;shared-kernel&quot;&gt;Shared Kernel&lt;/h4&gt;
+&lt;h4 id=&quot;customer-supplier&quot;&gt;Customer-Supplier&lt;/h4&gt;
+
+&lt;p&gt;Updating……&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="ddd" /><category term="domain-driven-design" /><category term="domain-driven-development" /><category term="microservice" /><summary type="html">Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nàp? Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau: Đâu là ranh giới của các Bounded Contexts? Có những mối quan hệ nào giữa các Bounded Contexts? Làm thế nào để các Bounded Context giao tiếp với nhau về mặt kĩ thuật? Làm thế nào để đối phó với những thay đổi không mong muốn xãy ra ở Upstream Context? Làm thế nào để các Upstream Context không gây rắc rối cho các Downstream Context? Làm thế nào để tổ chức ánh xạ ngữ nghĩa các Domain Model giữa các Bounded Context cũng như làm thế nào để translate các thuật ngữ trong ubiquitous language sang các ngôn ngữ khác. Các Principles trong việc tổ chức integrate các Bounded Context là gì? Những giá trị lớn lao khi tổ chức, xây dựng tốt các Context Maps(Integrate chúng một cách dễ dàng, tính cohesion cao mà lại low coupling, dễ duy trì, mở rộng, tạo nguổn dữ liệu real time cho việc mining, phân tích,…)</summary></entry><entry><title type="html">Xàm xí về Domain Driven Design - Part 2.1 - Strategic Design - SubDomain - Bounded Context</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-1/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 2.1 - Strategic Design - SubDomain - Bounded Context" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-1</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-1/">&lt;p&gt;Ở bài trước mình đã phần nào đưa ra ý kiến cá nhân về định nghĩa, mục đích sử dụng domain driven design trong việc phát triển các enterprise system. Trong bài này mình tiếp tục nói về công cụ của quan trọng nhất của DDD - Strategic Design, sự thiết yếu của Strategic Design, nói về approach để chúng ta xử lí một hệ thống phức tạp, về approach để chia nhỏ hệ thống bên cạnh đó phần nào làm rõ các khái niệm như Ubiquitous Language, Bounded Context, Subdomain,….&lt;/p&gt;
 
 &lt;p&gt;Khi nói đến việc xử lí một Domain lớn, một vấn đề lớn và phức tạp thường chúng ta tiếp cận dựa trên &lt;strong&gt;Problem space&lt;/strong&gt; và &lt;strong&gt;Solution Space&lt;/strong&gt;. &lt;strong&gt;Problem space&lt;/strong&gt; trả lời một tập các câu hỏi What? Hướng chúng ta nghĩ đến các business problems cần được giải quyết nhằm trả lời câu hỏi What lớn nhất là Domain của chúng ta. Trong khi đó &lt;strong&gt;Solution space&lt;/strong&gt; tập trung vào việc trả lời các câu hỏi How? hướng chúng ta nghĩ đến cách chúng ta sẽ triển khai phần mềm để giải quyết các vấn đề business đó. &lt;strong&gt;Problem Space&lt;/strong&gt; và &lt;strong&gt;Solution Space&lt;/strong&gt; là nền tảng cho việc xử lí hệ thống phức tạp của chúng ta. Về cơ bản DDD hướng chúng ta giảm sực phức tạp bằng cách chia nhỏ &lt;strong&gt;Problem Space&lt;/strong&gt; và &lt;strong&gt;Solution Space&lt;/strong&gt; của domain mà chúng ta hướng tới.&lt;/p&gt;
 
@@ -297,16 +297,17 @@ Rõ ràng kafka thoã mãn hai đặc điểm đó là High-availability và Dur
 
 &lt;p&gt;&lt;img src=&quot;https://gokit.io/faq/onion.png&quot; alt=&quot;Atom&quot; /&gt;&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="golang" /><category term="gokit" /><category term="microservices" /><summary type="html">Golang là ngôn ngữ tuyệt vời cho Microservices về hiệu xuất lẫn sự thân thiện đối với developer. Sự phát triển mạnh mẽ của cộng đồng Gopher ngày càng mang đến cho chúng ta những Open Source rất có ích và làm cho việc phát triển phần mềm với Go trở nên dễ dàng hơn. Gokit là một bộ toolkit tuyệt vời cho việc xây dựng các microservices với Go, cung cấp cho chúng ta các quy tắc, ý tưởng về kiến trúc nhằm giúp developer tập trung hơn vào việc phát triển business logic và tránh khỏi các mối quan tâm chung về operational lẫn infrastructural.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Clean Architecture</title><link href="https://romeo.vn/clean-architecture/" rel="alternate" type="text/html" title="Clean Architecture" /><published>2018-07-20T09:01:00-05:00</published><updated>2018-07-20T09:01:00-05:00</updated><id>https://romeo.vn/clean-architecture</id><content type="html" xml:base="https://romeo.vn/clean-architecture/">&lt;p&gt;Trong bài viết này chúng ta sẻ cùng thảo luận về một loạt các patterns, principles, paradigms nhằm tạo ra một kiến trúc tốt hơn nhằm thay thế cho các approaches không thực sự còn hợp thời nữa, đặc biệt là các concepts trong Clean Architecture. Bài viết này mình sẻ thảo luận về một số mục chính sau:&lt;/p&gt;
 
-&lt;h3 id=&quot;i-software-architecture-là-gì-tại-sao-chúng-ta-cần-tìm-hiểu-chúng&quot;&gt;&lt;em&gt;I. Software Architecture là gì? Tại sao chúng ta cần tìm hiểu chúng?&lt;/em&gt;&lt;/h3&gt;
-&lt;h3 id=&quot;ii-những-gì-cấu-nên-software-architecture&quot;&gt;&lt;em&gt;II. Những gì cấu nên Software Architecture&lt;/em&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;1-các-promgramming-paradigms&quot;&gt;&lt;em&gt;1. Các promgramming paradigms&lt;/em&gt;&lt;/h4&gt;
-&lt;h4 id=&quot;2-các-design-parterns&quot;&gt;&lt;em&gt;2. Các design parterns&lt;/em&gt;&lt;/h4&gt;
+&lt;p&gt;I. Software Architecture là gì? Tại sao chúng ta cần tìm hiểu chúng?&lt;/p&gt;
 
-&lt;h3 id=&quot;iii-một-architecture-tốt-sẻ-trông-như-thế-nào&quot;&gt;&lt;em&gt;III. Một architecture tốt sẻ trông như thế nào?&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;II. Những gì cấu nên Software Architecture&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Các promgramming paradigms&lt;/li&gt;
+  &lt;li&gt;Các design principles&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h3 id=&quot;iv-cùng-xem-lại-mô-hình-ba-lớp-và-kiến-trúc-database-centric-truyền-thống-và-vấn-đề-của-chúng&quot;&gt;&lt;em&gt;IV. Cùng xem lại mô hình ba lớp và kiến trúc Database Centric truyền thống và vấn đề của chúng.&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;III. Một architecture tốt sẻ trông như thế nào?&lt;/p&gt;
 
-&lt;h3 id=&quot;v-clean-architecture&quot;&gt;&lt;em&gt;V. Clean Architecture&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;IV. Clean Architecture&lt;/p&gt;
 
 &lt;p&gt;Trước khi bắt đầu thảo luận về các mục chính, mình xin chia sẻ một chút về quá trình tiếp xúc với các mẫu kiến trúc của mình.&lt;/p&gt;
 
@@ -375,7 +376,8 @@ Rõ ràng kafka thoã mãn hai đặc điểm đó là High-availability và Dur
 
 &lt;p&gt;Các Principles chúng ta nên tham khảo và áp dụng như Component Principles, SOLID Principles,… Các bạn có thể xem lại &lt;a href=&quot;https://romeo.vn/solid-principle/&quot;&gt;SOLID Principles&lt;/a&gt; .&lt;/p&gt;
 
-&lt;h3 id=&quot;iii-một-architecture-tốt-sẻ-trông-như-thế-nào-1&quot;&gt;III. MỘT ARCHITECTURE TỐT SẺ TRÔNG NHƯ THẾ NÀO?&lt;/h3&gt;
+&lt;h3 id=&quot;iii-một-architecture-tốt-sẻ-trông-như-thế-nào&quot;&gt;III. MỘT ARCHITECTURE TỐT SẺ TRÔNG NHƯ THẾ NÀO?&lt;/h3&gt;
+
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Architecture có thể được xem như cấp độ cao hơn code mà chúng ta đã viết. Nó là structure của ứng dụng, là cách mà các thành phần được tổ chức, sắp xếp và liên kết với nhau. 
@@ -395,11 +397,8 @@ Architecture thường bao gồm các lớp được triển khai theo trục d�
   &lt;li&gt;Maintainable: Rõ ràng rồi, thời gian và chi phí của việc maintain luôn chiếm hơn gấp đôi so với việc xây dựng mới, do đó một architecture không đảm bảo được tính Maintainable thì quả thực là nổi ám ảnh cho developer khi duy trì nó.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;iv-cùng-xem-lại-mô-hình-mvc-và-mô-hình-ba-lớp-truyền-thống-kiến-trúc-database-centric-và-các-vấn-đề-của-chúng&quot;&gt;IV. CÙNG XEM LẠI MÔ HÌNH MVC VÀ MÔ HÌNH BA LỚP TRUYỀN THỐNG, KIẾN TRÚC DATABASE CENTRIC VÀ CÁC VẤN ĐỀ CỦA CHÚNG&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;v-clean-architecture-1&quot;&gt;V. CLEAN ARCHITECTURE:&lt;/h3&gt;
-&lt;p&gt;Clean Architecture là gì? Chẳng qua là tập hợp các principles, partern nhằm separate các components, các dependencies, các concerns cuối cùng để chia phần mềm thành nhiều lớp và tổ chức các lớp đó sao cho thoả mãn các yêu cầu chung của một kiến trúc có thể gọi là “SẠCH”. Một số yêu cầu của một kiến trúc gọi là sạch phãi kể đến là:&lt;/p&gt;
+&lt;h3 id=&quot;v-clean-architecture&quot;&gt;V. CLEAN ARCHITECTURE:&lt;/h3&gt;
+&lt;p&gt;Trãi qua một quá trình dài tiến hoá và phát triển với các mẫu Architecture khác nhau. Cụ Bob giới thiệu cho chúng ta một tập hợp các Principles, Design Parterns nhằm separate các components, các dependencies, các concerns, chia phần mềm thành nhiều lớp và tổ chức các lớp đó sao cho thoả mãn các yêu cầu chung của một kiến trúc có thể gọi là tốt, nó được cụ Bob giới thiệu đầy đủ trong cuốn Clean Architecture, một cuốn sách mình thực sự nghiền ngẫm. Trong đó mô tả một kiến trúc Clean là một kiến trúc đáp ứng những tiêu chí sau:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Độc lập với các Frameworks: Kiến trúc phần mềm là không phụ thuộc vào bất cứ Framework/Tool-kit nào, các Frameworks có sẳn sinh ra nhằm giúp chúng ta một phần nào đó trong việc tổ chức hệ thống chứ không nhất nhất là chúng ta cần gì cũng kéo Framework vào để rồi phãi nhồi nhét nhiều thứ quy tắc rối rắm mà mỗi Framework yêu cầu.&lt;/li&gt;
   &lt;li&gt;Dễ test: Các thành phần trong phần mềm của chúng ta phãi dễ test mà không phãi phụ thuộc vào interface(UI/console UI), database hay bất cứ thành phần nào.&lt;/li&gt;
@@ -408,18 +407,21 @@ Architecture thường bao gồm các lớp được triển khai theo trục d�
   &lt;li&gt;Độc lập với các thành phần third-party: Phần mềm của chúng ta sẻ không phụ thuộc vào bất cứ libraries/frameworks hay bất cứ thành phần third-party nào, chúng ta phãi có một tư duy rằng các frameworks/libraries sinh ra để chúng ta chọn cho việc phục vụ nhu cầu nghiệp vụ của chúng ta chứ không phãi chúng ta phụ thuộc vào các thứ đó để implement các logic nghiệp vụ của mình.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Để đạt được những điều trên, tác giả Uncle Bob đề ra các ý tưởng, quy tắc được mô tả trong hình dưới:
-&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Để đạt được những điều trên, tác giả Uncle Bob đề ra các ý tưởng, quy tắc được mô tả trong hình dưới:&lt;/p&gt;
 
-&lt;p&gt;Và để dễ dàng tiếp cận chúng ta sẻ cùng phân tích các thành phần của một ứng dụng đơn giản để làm rõ những mục tiêu nguyên tắc của Clean Architect. Giả sử chúng ta có một ứng dụng đơn giản với một mô hình data-flow đơn giản như sau:
-&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Khi đó chúng ta sẻ đặt các thành phần lên các vòng tròn cơ bản như sau:
-&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Và để dễ dàng tiếp cận chúng ta sẻ cùng phân tích các thành phần của một ứng dụng đơn giản để làm rõ những mục tiêu nguyên tắc của Clean Architect. Giả sử chúng ta có một ứng dụng đơn giản với một mô hình data-flow đơn giản như sau:&lt;/p&gt;
 
-&lt;p&gt;Chia theo mức độ tổng quát chúng ta sẻ có hai tầng như sau:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;interface-layer&quot;&gt;Interface Layer:&lt;/h4&gt;
+&lt;p&gt;Khi đó chúng ta sẻ đặt các thành phần lên các vòng tròn cơ bản như sau:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2018-01-20-clean-architecture/3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nhìn theo mức độ tổng quát chúng ta sẻ có hai tầng abstract như sau:&lt;/p&gt;
+
+&lt;h4 id=&quot;tầng-interface&quot;&gt;Tầng Interface:&lt;/h4&gt;
 &lt;p&gt;Hai vòng tròn ngoài cùng mình tạm đặt nó vào tầng Interface. Đây là tầng chứa các  cổng giao tiếp:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Giao tiếp từ client đến hệ thống(Controller vs Presenter), tuỳ thuộc vào yêu cầu của hệ thống mà chúng ta sẻ implement các cổng Interfaces cụ thể để phục vụ client, có thể là giao tiếp dựa trên Rest/gRPC/TCP…. từ đó chúng ta có thêm các quyết định separate tầng này ra thành các tầng nhỏ dựa vào các lớp endpoints, transports cụ thể.&lt;/li&gt;
@@ -427,18 +429,56 @@ Architecture thường bao gồm các lớp được triển khai theo trục d�
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;domain-layer&quot;&gt;Domain Layer:&lt;/h4&gt;
-&lt;p&gt;Là hai vòng tròn trong cùng, hai vòng tròn này sẻ chứa các Entities, Use cases, Infrastructure Interfaces.&lt;/p&gt;
+&lt;p&gt;Domain Layer là layer chứa hai vòng tròn trong cùng, hai vòng tròn này về cơ bản sẻ gồm các Entities, các Use cases và các Infrastructure Interfaces.&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Các Entities đóng gói các business rules. Một Entity có thể là một class/struct với các phương thức hoặc có thể là một tập hợp các cấu trúc dữ liệu và hàm, miễn là nó có thể được sử dụng bởi nhiều ứng dụng khác nhau trong toàn bộ phần mềm của chúng ta. Nếu chúng ta chỉ viết một ứng dụng đơn lẻ, thì các Entities chính là các đối tượng business của ứng dụng. Chúng đóng gói các quy tắc chung và cao cấp nhất. Chúng ít có khả năng thay đổi do ảnh hưởng từ những thay đổi bên ngoài. Chẳng hạn, bạn không thể mong những đối tượng này bị ảnh hưởng bởi một thay đổi đến từ UI, security hay kể cả việc thay đổi công nghệ.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Các Use Case: Domain Layer sẻ chứa các business rules cụ thể của ứng dụng. Nó đóng gói và implement tất cả các use cases của hệ thống. Các use cases này sẽ điều chỉnh luồng dữ liệu đến và đi từ các Entities và chỉ đạo Entities thể đó sử dụng các business rules của doanh nghiệp để đạt được các mục tiêu của mỗi use case.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Chúng ta không mong muốn những thay đổi trong các use cases sẽ ảnh hưởng đến các thực thể, chúng ta cũng không mong muốn lớp use cases bị ảnh hưởng bởi những thay đổi của các yếu tố bên ngoài như cơ sở dữ liệu, giao diện người dùng hoặc bất kỳ framework nào, lớp này phãi cô lập với những mối lo ngại đó.
-Đây là layer vô cùng quan trọng, chứa nhiều logic do đó chúng ta phãi chú trọng tổ chức một cách hợp lí để không bị rối sau quá trình phình to. Tuỳ vào mục đích và tình huống cụ thể mà chúng ta có thể lựa chọn các partern cho phù hợp.&lt;/li&gt;
-  &lt;li&gt;Các Infrastructure Interfaces: Ở đây là các Repository Interfaces, Search Engine Interface,… mà các Use Cases cần để phục vụ việc vận hành business logic.&lt;/li&gt;
+  &lt;li&gt;Các Entities sẻ encapsulate các business rules. Một Entity có thể là một class/struct với các phương thức hoặc có thể là một tập hợp các cấu trúc dữ liệu và hàm, miễn là nó có thể được sử dụng bởi nhiều ứng dụng khác nhau trong toàn bộ hệ thống. Nếu chúng ta chỉ viết một ứng dụng đơn lẻ, thì các Entities chính là các business object của ứng dụng. Chúng encapsulate các quy tắc chung và cao cấp nhất. Các Entities ít có khả năng thay đổi do ảnh hưởng từ những thay đổi từ bên ngoài như UI, security hay kể cả việc thay đổi công nghệ, language, framework.&lt;/li&gt;
+  &lt;li&gt;Các Use Case: Domain Layer sẻ chứa các business rules cụ thể của ứng dụng. Nó đóng gói và implement tất cả các use cases của hệ thống. Các use cases này sẽ điều chỉnh luồng dữ liệu đến và đi từ các Entities và chỉ đạo Entities thể đó sử dụng các business rules của doanh nghiệp để đạt được các mục tiêu của mỗi use case.&lt;/li&gt;
+  &lt;li&gt;Chúng ta không cho phép những thay đổi trong các use cases ảnh hưởng đến các Entities, và cũng không muốn lớp use cases bị ảnh hưởng bởi những thay đổi của các yếu tố bên ngoài như cơ sở dữ liệu, giao diện người dùng hoặc bất kỳ framework nào, lớp này phãi cô lập với những thành phần đó.&lt;/li&gt;
+  &lt;li&gt;Các Infrastructure Interfaces: Ở đây là các Repository Interfaces, Search Engine Interface,… mà các Use Cases cần để phục vụ việc vận hành business logic. 
+Đây là layer vô cùng quan trọng, chứa nhiều logic do đó chúng ta phãi chú trọng tổ chức một cách hợp lí để không bị rối sau quá trình phình to. Tuỳ vào mục đích và tình huống cụ thể mà chúng ta có thể lựa chọn các partern cho phù hợp. 
+Với tất cả hệ thống thì thành phần quan trọng nhất của nó luôn là Domain Layer, đây là nơi tập trung các Domain, các Use Cases, là nơi sẻ quyết định hệ thống này làm gì cho khách hàng, quyết định giá trị gì mà chúng ta tạo ra, quyết định sống còn của hệ thống. Mọi thứ bên ngoài như Databases, Frameworks, Protocols,…. đó có thể quy chung lại là các thành phần infrastructures giúp chúng ta implement và vận hành business logic mà thôi.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Với tất cả hệ thống thì thành phần quan trọng nhất của nó luôn là Domain Layer, đây là nơi tập trung các Domain, các Use Cases, là nơi sẻ quyết định hệ thống này làm gì cho khách hàng, quyết định giá trị gì mà chúng ta tạo ra, quyết định sống còn của hệ thống. Mọi thứ bên ngoài như Databases, Frameworks, Protocols,…. đó có thể quy chung lại là các thành phần infrastructures giúp chúng ta implement và vận hành business logic mà thôi.&lt;/p&gt;
+&lt;p&gt;Về cách tổ chức code chúng ta cũng sẻ dễ dàng tuỳ chỉnh dựa trên tư tưởng đó:&lt;/p&gt;
+
+&lt;p&gt;Với Golang mình thường tổ chức theo mô hình sau:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── domain
+│   ├── models
+│   │   ├── ..
+│   ├── repositories
+│   │   ├── ..
+│   ├── usecases
+│   │   ├── ..
+├── endpoints
+├── interfaces
+│   ├── httpsv
+│   ├── grpcsv
+│   ├── elasticsearch
+│   ├── mysql
+├── cmd
+├── vendor
+└── ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Với Typescript trên nền tảng Nodejs mình thưởng tổ chức như sau:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;├── src
+│   ├── domains
+│   │   ├── entities
+│   │   ├── interfaces
+│   │   ├── use_cases
+│   │   ├── ...
+│   ├── delivery
+│   │   ├── http
+│   │   ├── grpc
+│   ├── infrastructure
+│   │   ├── data_access_layer
+│   │   │   ├── cassandra_implementation
+│   │   │...
+│   └── ...
+├── node_modules
+├── package.json
+└── ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;quy-tắc-về-dependencythe-dependency-rule&quot;&gt;Quy tắc về Dependency(The Dependency Rule)&lt;/h4&gt;
 &lt;p&gt;Chính sự phân cấp về độ quan trọng của các thành phần của hệ thống, chúng ta phãi có một quy tắc để tổ chức chúng quy tắc về Dependency(The Dependency Rule)&lt;/p&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-09T01:18:20-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-09T02:21:07-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
 
 &lt;p&gt;Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
 &lt;ul&gt;
@@ -360,33 +360,55 @@
 &lt;h3 id=&quot;5-conclusion&quot;&gt;5. Conclusion:&lt;/h3&gt;
 &lt;p&gt;Tin học mà, tin rồi mới học. Nếu bạn tin rằng chúng ta sẻ có thể sống vui vẻ hạnh phúc trong ngành phần mềm nhờ vào DDD rồi thì ngại gì không đào sâu nó nào.&lt;/p&gt;
 
-&lt;p&gt;Bài tiếp theo mình sẻ nói về công cụ đầu tiên và quan trọng nhất của Domain Driven Design - Strategic Modeling.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="ddd" /><category term="domain-driven-design" /><category term="domain-driven-development" /><category term="microservice" /><summary type="html">Bài trước mình đã chia sẻ những cơ duyên mình đến với DDD và coi DDD như một kim chỉ nam để sống vui vẻ hạnh phúc trong việc phát triển phần mềm. Bài viết này chúng ta sẻ cùng thảo luận những nội dung chính sau: What is Domain? What is Domain Driven Design? Why we need Domain Driven Design? What is the Ubiquitous Language? Big picture about Domain Driven Design</summary></entry><entry><title type="html">Kafka note</title><link href="https://romeo.vn/kafka-note/" rel="alternate" type="text/html" title="Kafka note" /><published>2018-09-16T21:10:00-05:00</published><updated>2018-09-16T21:10:00-05:00</updated><id>https://romeo.vn/kafka-note</id><content type="html" xml:base="https://romeo.vn/kafka-note/">&lt;h2 id=&quot;why-kafka&quot;&gt;Why Kafka?&lt;/h2&gt;
+&lt;p&gt;Bài tiếp theo mình sẻ nói về công cụ đầu tiên và quan trọng nhất của Domain Driven Design - Strategic Modeling.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="ddd" /><category term="domain-driven-design" /><category term="domain-driven-development" /><category term="microservice" /><summary type="html">Bài trước mình đã chia sẻ những cơ duyên mình đến với DDD và coi DDD như một kim chỉ nam để sống vui vẻ hạnh phúc trong việc phát triển phần mềm. Bài viết này chúng ta sẻ cùng thảo luận những nội dung chính sau: What is Domain? What is Domain Driven Design? Why we need Domain Driven Design? What is the Ubiquitous Language? Big picture about Domain Driven Design</summary></entry><entry><title type="html">Introduce to Kafka</title><link href="https://romeo.vn/introduce-to-kafka/" rel="alternate" type="text/html" title="Introduce to Kafka" /><published>2018-09-16T21:10:00-05:00</published><updated>2018-09-16T21:10:00-05:00</updated><id>https://romeo.vn/introduce-to-kafka</id><content type="html" xml:base="https://romeo.vn/introduce-to-kafka/">&lt;p&gt;Trong các hệ thống Microservices và Reactive System, một trong những thứ không thể thiếu đó là các message broker/stream. Hiện tại team mình đang dùng Kafka cho mục đích chính cho integration, decouple hệ thống cũng như implement Event Sourcing partern.&lt;/p&gt;
+
+&lt;p&gt;Với bài viết này mình sẻ ghi lại một chút kiến thức cũng như kinh nghiệm trong thời gian ngắn vừa rồi làm việc với Kafka. Mình sẻ giới thiệu hai nội dung chính sau:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Dùng làm message queue&lt;/li&gt;
-  &lt;li&gt;Là công cụ thiết yếu cho việc Decoupling và Integrating&lt;/li&gt;
-  &lt;li&gt;Là công cụ cực kì mạnh mẻ cho Data Streaming, xử lí data realtime&lt;/li&gt;
+  &lt;li&gt;Why Kafka? Các usecase của Kafka?&lt;/li&gt;
+  &lt;li&gt;Kiến trúc của Kafka&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;dùng-làm-message-queue&quot;&gt;Dùng làm message queue&lt;/h3&gt;
-&lt;p&gt;Chúng ta bắt đầu bằng việc có một bài toán như sau: Nếu có 1 triệu người đặt hàng trên trang web của bạn cùng lúc nó có thể tạo ra một số vấn đề concurrency và việc đảm bảo việc sử lí các yêu cầu theo thứ tự ngay lập tức chúng ta nghĩ đến việc xếp các order vào một message queue để có thể đảm bảo thứ tự của chúng và kiểm soát được số lượng được xử lí đồng thời đó, Kafka với một kiến trúc scalability là một trong những lựa chọn tốt giúp chúng ta xử lí được bài toán trên.&lt;/p&gt;
+&lt;h3 id=&quot;a-why-kafka&quot;&gt;A. Why Kafka?&lt;/h3&gt;
+&lt;p&gt;Trong thực tế Kafka có rất nhiều lợi ích, mình chỉ liệt kê ra một số usecases mà tụi mình đã và đang dùng cho dự án.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dùng làm message queue&lt;/li&gt;
+  &lt;li&gt;Là công cụ thiết yếu cho việc Decouple hệ thống và Integration&lt;/li&gt;
+  &lt;li&gt;Dùng cho việc implement các RPC function và Reactive System/Event Driven System&lt;/li&gt;
+  &lt;li&gt;Là công cụ cực kì mạnh mẻ cho Data Streaming và xử lí Data Realtime&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;là-công-cụ-thiết-yếu-cho-việc-decoupling-và-integrating&quot;&gt;Là công cụ thiết yếu cho việc Decoupling và Integrating&lt;/h3&gt;
-&lt;p&gt;Khi làm việc với các hệ thống phức tạp chúng ta bắt buộc phãi thiết kế thành một hệ thống low coupling, High cohesion. Kafka là công cụ cực kì mạnh mẻ cho việc decoupling hệ thống cho phép chúng ta phân tách các thành phần của hệ thống thành các thành phần độc lập, low coupling. Trong một hệ thống lớn chúng ta thường sử dụng nhiều ngôn ngữ, công nghệ khác nhau tuỳ thuộc vào mục đích từng thành phần, hơn nữa việc duy trì dependencies cứng nhắc giữa các thành phần đôi lúc không cần thiết. Bằng cách giao tiếp thông qua kafka giữa các services với các format hợp lí và khớp lệ bạn có có thể tách biệt được dependencies giữa các service, mỗi thành phần của hệ thống đều có thể phát triển, mở rộng một cách độc lập.&lt;/p&gt;
+&lt;h4 id=&quot;1-dùng-kafka-làm-message-queue&quot;&gt;1. Dùng Kafka làm message queue&lt;/h4&gt;
+&lt;p&gt;Chúng ta bắt đầu bằng việc có một bài toán như sau: Nếu có 1 triệu người đặt hàng trên trang web của bạn cùng lúc, nó có thể tạo ra một số vấn đề concurrency như deadlock, race condition,…. lúc đó ý tưởng về việc sử lí các yêu cầu theo thứ tự ngay lập tức mang lại hiệu quả. Chúng ta sẻ sắp xếp các order vào một message queue để có thể đảm bảo thứ tự của chúng và kiểm soát được số lượng order được xử lí đồng thời, Kafka với một kiến trúc scalable là một trong những lựa chọn tốt giúp chúng ta xử lí được bài toán trên.&lt;/p&gt;
 
-&lt;p&gt;Đặc biệt đối với Microservice Approach, chúng ta thường đối mặt với các vấn đề liên quan đến internal communication và xử lí lỗi trong communication giữa các services. Những dạng giao tiếp thường thấy có thể là call trực tiếp(thông qua http rest/gRPC/thrift….), giao tiếp thông qua việc sử dụng asynchronous messaging, và có thể cao hơn đó là dùng các giao thức đặc biệt dành riêng cho hệ thống. Tuy nhiên đối với các hệ thống phãi xử lí một lượng lớn request trên kiến trúc microservice cũng như kiến trúc monolic truyền thống thì những lỗi như lỗi mạng, timeout, lỗi do bug….là điều không thể tránh khỏi. Message Streaming nói chung và kafka nói riêng giúp hệ thống của chúng ta xử lí các lỗi trên một cách hiệu quả bằng cách lưu lại trạng thái các request lúc nào xử lí xong mới xoá request đó đi bất cứ lỗi nào xãy ra thì chúng ta đều có thể xử lí lại request đó.&lt;/p&gt;
+&lt;h4 id=&quot;2-là-công-cụ-thiết-yếu-cho-việc-decouple-hệ-thống-và-integration&quot;&gt;2. Là công cụ thiết yếu cho việc Decouple hệ thống và Integration&lt;/h4&gt;
+&lt;p&gt;Khi làm việc với các hệ thống phức tạp chúng ta bắt buộc phãi thiết kế thành một hệ thống Low Coupling, High Cohesion. Kafka là công cụ cực kì mạnh mẻ cho việc decouple hệ thống, nó cho phép chúng ta phân tách các thành phần của hệ thống thành các thành phần độc lập, low coupling đồng thời đảm bảo High Cohesion.&lt;/p&gt;
 
-&lt;h3 id=&quot;đối-với-mô-hình-event-driven&quot;&gt;Đối với mô hình Event Driven:&lt;/h3&gt;
+&lt;p&gt;Trong một hệ thống lớn chúng ta thường sử dụng nhiều ngôn ngữ và công nghệ khác nhau tuỳ thuộc vào mục đích từng thành phần, hơn nữa việc duy trì dependencies cứng nhắc giữa các thành phần đôi lúc không cần thiết và đôi lúc phãi trả một cái giá lớn cho dependencies. Bằng cách giao tiếp thông qua kafka giữa các services với các format hợp lí bạn có có thể tách biệt được dependencies giữa các service, mỗi thành phần của hệ thống đều có thể phát triển, mở rộng một cách độc lập.&lt;/p&gt;
+
+&lt;p&gt;Đặc biệt đối với Microservice Approach, chúng ta thường đối mặt với các vấn đề liên quan đến Internal Communication và xử lí lỗi trong communication giữa các services. Những dạng giao tiếp thường thấy có thể là call trực tiếp(thông qua http rest/gRPC/thrift….), giao tiếp thông qua việc sử dụng Asynchronous Messaging. Tuy nhiên đối với các hệ thống phãi xử lí một lượng lớn request trên kiến trúc Microservices cũng như kiến trúc Monolic truyền thống thì những lỗi như lỗi mạng, timeout, lỗi do bug….là điều không thể tránh khỏi. Message Streaming nói chung và Kafka nói riêng giúp hệ thống của chúng ta xử lí các lỗi trên một cách hiệu quả bằng cách implement các Circuit Breaker, một cách đơn giản nhất đó là lưu lại trạng thái các request lúc nào xử lí xong mới xoá request đó đi bất cứ lỗi nào xãy ra thì chúng ta đều có thể xử lí lại request đó.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-dùng-cho-việc-implement-các-rpc-function-và-reactive-systemevent-driven-system&quot;&gt;3. Dùng cho việc implement các RPC function và Reactive System/Event Driven System&lt;/h3&gt;
 &lt;p&gt;Các ngôn ngữ lập trình truyền thống thường dựa trên thread và threadpools để xử lí các tác vụ đồng thời đơn cử như là Java theo mặc định mỗi thread thường chiếm 1MB trong stack size(trên JVM 64bit) và chúng ta có thể config stack size tuỳ ý. Việc cấp phát một thread thường khá đắt đỏ trong CPU cho nên chúng ta thường sẻ phãi config size của threadpools trước, mỗi khi có request tới, web server sẻ pick một thread trong threadpools và kêu nó xử lí reuqest, các thread trên sẻ xử lí các tác vụ một cách song song. Nếu bạn giữ các giá trị như mặc định thì nếu config 1k thread trong thread pool đồng nghĩa với việc bạn sẻ dùng hết gần 1G Ram.&lt;/p&gt;
 
 &lt;p&gt;Đối với hệ thống lớn chúng ta sẻ gặp phãi hai vấn đề về thread đó là stack size và threadpools size. Nếu config stack size mỗi thread nhỏ xuống thì sẻ tiết kiệm được nhiều bộ nhớ nhưng khi một thread nào đó đòi hỏi tính toán nhiều thì dễ gây ra stack overflow. Cũng như vậy đối với threadpools size, khi chúng ta giữ một lượng lớn thread trong threadpool thì memory cost và switching context cost sẻ là rất cao và hệ thống sẻ trở nên khó kiểm soát, ngược lại khi giữ một số lượng thread nhỏ hơn thì lại làm giảm tính available của hệ thống.&lt;/p&gt;
 
-&lt;p&gt;Nếu hệ thống chúng ta có các tác vụ tính toán mất thời gian, tốn tài nguyên, khó thể ước tính thời gian và tài nguyên cho mỗi yêu cầu nhưng lại không nhất thiết phãi response ngay lập tức thì chúng ta có thể sử dụng mô hình trên. Khi thiết kế hệ thống dựa trên mô hình Event Driven thì Kafka là một lựa chọn khá tốt để xử lí các event. Bạn có thể sử dụng kafka để lưu trử các request message và các worker xử lí request sau đó.&lt;/p&gt;
+&lt;p&gt;Nếu hệ thống chúng ta có các tác vụ tính toán mất thời gian, tốn tài nguyên, khó thể ước tính thời gian và tài nguyên cho mỗi yêu cầu nhưng lại không nhất thiết phãi response ngay lập tức thì chúng ta có thể sử dụng mô hình RPC.&lt;/p&gt;
 
-&lt;h3 id=&quot;đối-với-stream-proccessing-data-realtime&quot;&gt;Đối với Stream Proccessing data realtime.&lt;/h3&gt;
-&lt;p&gt;Trong một hệ thống lớn với lượng Data khổng lồ thì việc xử lí một lượng lớn Data như vậy bằng Batch Proccessing là điều rất tốn thời gian cũng như tài nguyên. Có những yêu cầu về việc phân tích Data Realtime, đưa ra report gần như chính xác tại mỗi thời điểm,…lúc đó những Message Stream như Kafka là giải pháp thực sự tốt.&lt;/p&gt;
+&lt;p&gt;Các hệ thống ngày càng phát triển đòi hỏi một tốc độ phản hồi cao, đối mặt tốt với các lỗi cũng như đòi hỏi mức downtime = 0, đồng thời đáp ứng khả năng mở rộng tuyệt vời với không một điểm thắt cổ chai. Đó là mục tiêu người ta xây dựng nên Reactive System với mọi thứ hướng theo Event.
+Kafka với khả năng mở rộng tuyệt vời và đáng tin cậy do đó là một lựa chọn khá tốt để xử lí các event trong mô hình này.&lt;/p&gt;
 
-&lt;h2 id=&quot;kiến-trúc-kafka&quot;&gt;Kiến trúc kafka:&lt;/h2&gt;
-&lt;p&gt;Cơ chế hoạt động cơ bản của Kafka hình dung đơn giản giống như Logs system, các log record được lưu lên đĩa và sắp xếp theo thứ tự thời gian, Kafka tổ chức phân loại các messages theo khái niệm Topic hình dung giống như tag trong việc quản lí Log của chúng ta. Mỗi khi cài đặt kafka một trong những việc ta cần làm là setup nơi mà log sẻ được lưu xuống-url của log.dir, mỗi topic sẻ được map với thư mục con bên trong thư mục log của chúng ta và cũng có thêm nhiều thư mục con nữa đó là các thư mục topic partitions với tên thư mục format là topic-name_partition-number, bên trong mỗi thư mục sẻ là file log nơi mà message tới sẻ được append vào. Mỗi Topic có một nhiều Partitions và mỗi Partition là một list các messages, khi một message được chia sẻ lên Kafka theo Topic, message sẻ được gửi vào một Partition của Topic, việc lưu message xuống Partition nào được quyết định bởi các producers. Nếu ta muốn message xuống Partition cụ thể nào đó thì ta phãi set partition_key cho message đó ứng với Partition ta muốn message xuống, nếu không mặc định message sẻ được phân phối theo giải thuật round-robin.&lt;/p&gt;
+&lt;h3 id=&quot;4-đối-với-stream-proccessing-data-realtime&quot;&gt;4. Đối với Stream Proccessing data realtime.&lt;/h3&gt;
+&lt;p&gt;Trong các hệ thống hướng Data, các yêu cầu report một con số gì đó trong thời gian ngắn để make một decision là rất phổ biến. Trong một hệ thống lớn với lượng Data khổng lồ thì việc xử lí một lượng lớn Data như vậy bằng Batch Proccessing là điều rất tốn thời gian cũng như tài nguyên. Do đó sử dụng Kafka đổ reduce ra một kết quả sẻ giúp chúng ta dễ hiện thực tính năng đó hơn.&lt;/p&gt;
+
+&lt;p&gt;Bên cạnh đó cũng sẻ có những yêu cầu về việc phân tích Data Realtime, đưa ra report gần như chính xác tại mỗi thời điểm,…lúc đó những Message Stream như Kafka cùng với các tool liên quan đến Big Data như Hadoop, Spark là giải pháp tuyệt vời.&lt;/p&gt;
+
+&lt;h3 id=&quot;b-kiến-trúc-kafka&quot;&gt;B. Kiến trúc kafka:&lt;/h3&gt;
+&lt;p&gt;Cơ chế hoạt động cơ bản của Kafka hình dung đơn giản giống như Logs system, các log record được lưu lên đĩa và sắp xếp theo thứ tự thời gian, Kafka tổ chức phân loại các messages theo khái niệm Topic hình dung giống như tag trong việc quản lí Log của chúng ta.&lt;/p&gt;
+
+&lt;p&gt;Mỗi khi cài đặt Kafka một trong những việc ta cần làm là setup nơi mà log sẻ được lưu xuống-url của log.dir, mỗi topic sẻ được map với thư mục con bên trong thư mục log của chúng ta và cũng có thêm nhiều thư mục con nữa đó là các thư mục topic partitions với tên thư mục format là topic-name_partition-number, bên trong mỗi thư mục sẻ là file log nơi mà message tới sẻ được append vào.&lt;/p&gt;
+
+&lt;p&gt;Mỗi Topic có một hoặc nhiều Partitions và mỗi Partition là một list các messages, khi một message được chia sẻ lên Kafka theo Topic, message sẻ được gửi vào một Partition của Topic, việc lưu message xuống Partition nào được quyết định bởi các producers. Nếu ta muốn message xuống Partition cụ thể nào đó thì ta phãi set partition_key cho message đó ứng với Partition ta muốn message xuống, nếu không mặc định message sẻ được phân phối theo giải thuật round-robin.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;logs&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;logs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;topicA_0&lt;/span&gt;
@@ -396,7 +418,9 @@
     &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;logs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;topicC_1&lt;/span&gt;
     &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;logs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;topicC_2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Như trên chúng ta có thể thấy rằng topic A có 1 partition, topic B có 2 partitions và C có 3 partitions. Vậy partition đó là gì, dùng để làm gì? Partitions là một phần quan trọng trong thiết kế của kafka. Các partitions chia luồng message đến một topic vào các luồng song song và đó là chìa khoá giúp Kafka achieves một lượng message khổng lồ. Tuy nhiên thứ tự message đến từ các partitions khác nhau không được đảm bảo, Kafka chỉ đảm bảo thứ tự message trong cùng một partition, do đó trong trường hợp chúng ta cần đảm bảo thứ tự message cho nhiều tác vụ nào đó, chắc chắn các message xử lí các tác vụ đó phãi được sắp xếp vào cùng 1 topic và cùng một partion_key.&lt;/p&gt;
+&lt;p&gt;Như trên chúng ta có thể thấy rằng topic A có 1 partition, topic B có 2 partitions và C có 3 partitions. Vậy partition đó là gì, dùng để làm gì?&lt;/p&gt;
+
+&lt;p&gt;Partitions là một phần quan trọng trong thiết kế của kafka. Các partitions chia luồng message đến một topic vào các luồng song song và đó là chìa khoá giúp Kafka đạt được một lượng message khổng lồ. Tuy nhiên thứ tự message đến từ các partitions khác nhau không được đảm bảo, Kafka chỉ đảm bảo thứ tự message trong cùng một partition, do đó trong trường hợp chúng ta cần đảm bảo thứ tự message cho nhiều tác vụ nào đó, chắc chắn các message xử lí các tác vụ đó phãi được sắp xếp vào cùng 1 topic và cùng một partion_key.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-08-26-kafka-note/1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
@@ -408,14 +432,15 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-08-26-kafka-note/3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Tuy nhiên chỉ có các leader partitions mới được cho phép nhận message sau đo mới đồng bộ lên các replicas partitions khác và khi một leader partition chết thì một trong những replica của partition được chọn để làm leader partition cho đến khi partition kia sống lại thì nó trở thành replica và phãi fetch lại tất cả data chưa đồng bộ được trong quá trình chết đi từ các partition khác. Kafka dùng ZOOKEEPER để handle chuyện đó, Kafka dùng nó để thực hiện việc leadership electron các kafka broker và các cặp Topic Partition, ZOOKEEPER giúp quản lí việc Service Discovery cho các Kafka Brokers từ các cluster, handle các trường hợp broker nào join vào, broker nào chết đi, topic nào được add vào topic nào bị remove đi….
-Rõ ràng kafka thoã mãn hai đặc điểm đó là High-availability và Durability.&lt;/p&gt;
+&lt;p&gt;Tuy nhiên chỉ có các leader partitions mới được nhận message, leader partitions nhận message sau đo mới đồng bộ lên các replicas partitions khác. Trong trường hợp một leader partition chết thì một trong những replica của partition được chọn để làm leader partition. Đến khi partition kia sống lại thì nó trở thành replica và phãi fetch lại tất cả data chưa đồng bộ được trong quá trình chết đi từ các partition khác. Kafka dùng ZOOKEEPER để handle chuyện đó, Kafka dùng nó để thực hiện việc leadership electron các kafka broker và các cặp Topic Partition, ZOOKEEPER cũng đứng vai trò là Service Discovery cho các Kafka Brokers từ các cluster, xử lí các trường hợp broker nào join vào, broker nào chết đi, topic nào được add vào topic nào bị remove đi….&lt;/p&gt;
+
+&lt;p&gt;Rõ ràng nhìn vào kiến trúc của Kafka chúng ta thấy rằng nó hoàn toàn thoã mãn hai đặc điểm đó là High-availability và Durability.&lt;/p&gt;
 
 &lt;p&gt;Cách hoạt động của Kafka producers khá đơn giản, ban đầu các producers phãi fetch các metadata lên ví dụ như chúng cần biết có các topics nào đang tồn tại? có bao nhiêu partition mỗi topic đang có? leader broker hiện tại của mỗi partition là node nào? host và port của mỗi broker đó là sao? Sau đó chúng làm việc trực tiếp với các broker khác nhau mà không có một sự điều phối nào.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-08-26-kafka-note/4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Với thiết kế đó kafka producers đã loại bỏ triệt để vấn đề write-bottleneck, đồng thời giúp cho mỗi broker nhận được một số lượng messages hợp lí, dễ dàng mở rộng tuyến tính, khi muốn mở rộng chỉ cần thêm partition và broker vào.&lt;/p&gt;
+&lt;p&gt;Với thiết kế đó kafka producers đã loại bỏ triệt để vấn đề write-bottleneck, đồng thời giúp cho mỗi broker nhận được một số lượng messages hợp lí, dễ dàng mở rộng một cách tuyến tính, khi muốn mở rộng chỉ cần thêm partition và broker vào.&lt;/p&gt;
 
 &lt;p&gt;Như vậy nhìn chung thì Kafka producers tương đối đơn giản tuy nhiên đối với Kafka consumers thì phức tạp hơn nhiều. Cũng giống như Kafka producer, Kafka consumers bắt đầu các hoạt động của chúng bằng việc fetch các metadata, mỗi consumer có thể kết nối tới nhiều brokers và đọc từ nhiều replicas. Mỗi broker xử lí một tập hợp các partition của các topics mà consumer subsribe tới cùng lúc.&lt;/p&gt;
 
@@ -425,13 +450,13 @@ Rõ ràng kafka thoã mãn hai đặc điểm đó là High-availability và Dur
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-08-26-kafka-note/6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Tuy nhiên chỉ với thiết kế đó thì vẫn chưa đảm bảo tính scale, khái niệm consumer group sinh ra giúp chúng ta dễ dàng scale các consumers. Theo đó mỗi consumer sẻ thuộc về một consumer group hay nói cách khác một consumer group sẻ chứa các consumer và message sẻ được phân phát đến tất cả consumer group, mỗi member của group sẻ xử lí message từ một hoặc nhiều partitions.&lt;/p&gt;
+&lt;p&gt;Tuy nhiên chỉ với thiết kế đó thì vẫn chưa đảm bảo tính scalable, khái niệm consumer group sinh ra giúp chúng ta dễ dàng scale các consumers. Theo đó mỗi consumer sẻ thuộc về một consumer group hay nói cách khác một consumer group sẻ chứa các consumer và message sẻ được phân phát đến tất cả consumer group, mỗi member của group sẻ xử lí message từ một hoặc nhiều partitions.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2018-08-26-kafka-note/7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Với thiết kế này, mỗi consumer có thể xử lí message từ nhiều partitions, đảm bảo cover hết tất cả các partition cũng như thứ tự xử lí message trong mỗi partition đồng thời cân bằng tải giữa các consumers trong cùng một group. Khi chúng ta muốn scale lên chỉ cần tăng số brokers, tăng số partitions và tăng số consumers. Nhìn lại một lần nữa vào ví dụ trên, chúng ta có thể thấy rằng thiết kế trên cho phép mỗi consumer có thể xử lí nhiều partitions cùng lúc chứ không cho phép nhiều consumers cùng lúc xử lí một partition cho nên giả dụ như chúng ta có 5 partitions nhưng có đến 6 cunsumers thì hiển nhiên 1 consumer ngồi chơi làm phí phạm tài nguyên hệ thống, cho nên khi scale thì nên lưu ý rằng số consumers luôn bé hơn hoặc bằng số partitions mà tốt nhất là bằng nhau thì hơn.&lt;/p&gt;
 
-&lt;p&gt;Updating….&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="kafka" /><category term="event-driven" /><category term="microservice" /><summary type="html">Why Kafka? Dùng làm message queue Là công cụ thiết yếu cho việc Decoupling và Integrating Là công cụ cực kì mạnh mẻ cho Data Streaming, xử lí data realtime</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/2018-07-16-nhung-van-de-kafka-giai-quyet/1.png" /></entry><entry><title type="html">Introduce To GoKit</title><link href="https://romeo.vn/introduce-gokit/" rel="alternate" type="text/html" title="Introduce To GoKit" /><published>2018-08-06T20:15:00-05:00</published><updated>2018-08-06T20:15:00-05:00</updated><id>https://romeo.vn/introduce-gokit</id><content type="html" xml:base="https://romeo.vn/introduce-gokit/">&lt;h3 id=&quot;1-sơ-lược-về-gokit&quot;&gt;1. Sơ lược về Gokit&lt;/h3&gt;
+&lt;p&gt;Updating….&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="kafka" /><category term="event-driven" /><category term="microservice" /><summary type="html">Trong các hệ thống Microservices và Reactive System, một trong những thứ không thể thiếu đó là các message broker/stream. Hiện tại team mình đang dùng Kafka cho mục đích chính cho integration, decouple hệ thống cũng như implement Event Sourcing partern.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/2018-07-16-nhung-van-de-kafka-giai-quyet/1.png" /></entry><entry><title type="html">Introduce To GoKit</title><link href="https://romeo.vn/introduce-gokit/" rel="alternate" type="text/html" title="Introduce To GoKit" /><published>2018-08-06T20:15:00-05:00</published><updated>2018-08-06T20:15:00-05:00</updated><id>https://romeo.vn/introduce-gokit</id><content type="html" xml:base="https://romeo.vn/introduce-gokit/">&lt;h3 id=&quot;1-sơ-lược-về-gokit&quot;&gt;1. Sơ lược về Gokit&lt;/h3&gt;
 &lt;p&gt;Golang là ngôn ngữ tuyệt vời cho việc phát triển hệ thống Microservices,  Go thực sự mang lại những trãi nghiệm tốt về hiệu xuất lẫn sự đơn giản thân thiện đối với Developer. Sự phát triển mạnh mẽ của cộng đồng Gopher ngày càng mang đến cho chúng ta những Open Source rất hữu ích, đồng thời giúp cho việc phát triển phần mềm với Go trở nên dễ dàng hơn.&lt;/p&gt;
 
 &lt;p&gt;Gokit là một bộ toolkit tuyệt vời cho việc xây dựng các Microservices với Go. Gokit cung cấp cho chúng ta các quy tắc, ý tưởng về kiến trúc nhằm giúp Developer tập trung hơn vào việc phát triển Business Logic, tránh khỏi các mối quan tâm về Operational lẫn Infrastructural.&lt;/p&gt;
@@ -689,7 +714,125 @@ Với tất cả hệ thống thì thành phần quan trọng nhất của nó l
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/lephuocmy668/daily-problems-solving/tree/master/golang/workspace/tiktok-clean-microservice&quot;&gt;Golang Clean Microservice&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/lephuocmy668/nodejs-typescript-clean-architecture&quot;&gt;Typescript Clean Microservice&lt;/a&gt;&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><category term="functional programming" /><category term="functional reactive programming" /><category term="declarative programming" /><category term="clean architecture" /><category term="concurrency" /><summary type="html">Trong bài viết này chúng ta sẻ cùng thảo luận về một loạt các patterns, principles, paradigms nhằm tạo ra một kiến trúc tốt hơn nhằm thay thế cho các approaches không thực sự còn hợp thời nữa, đặc biệt là các concepts trong Clean Architecture. Bài viết này mình sẻ thảo luận về một số mục chính sau:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Solid Principle</title><link href="https://romeo.vn/solid-principle/" rel="alternate" type="text/html" title="Solid Principle" /><published>2018-01-12T01:01:00-06:00</published><updated>2018-01-12T01:01:00-06:00</updated><id>https://romeo.vn/solid-principle</id><content type="html" xml:base="https://romeo.vn/solid-principle/">&lt;p&gt;Hệ thống phần mềm tốt phãi bắt đầu bằng code sạch. Cũng giống như việc xây nhà, bắt đầu chúng ta cần những viên gạch tốt đã, nhưng những viên gạch đã không tốt thì kiến ​​trúc của tòa nhà không còn quan trọng nữa vì nó đã dễ dàng sụp đổ rồi. Một mặt khác, khi bạn có các viên gạch tốt rồi nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn từ những viên gạch tốt đó. Do đó Solid đến và giúp chúng ta xây dựng các kiến trúc tốt dựa trên các viên gạch tốt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lephuocmy668/nodejs-typescript-clean-architecture&quot;&gt;Typescript Clean Microservice&lt;/a&gt;&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><category term="functional programming" /><category term="functional reactive programming" /><category term="declarative programming" /><category term="clean architecture" /><category term="concurrency" /><summary type="html">Trong bài viết này chúng ta sẻ cùng thảo luận về một loạt các patterns, principles, paradigms nhằm tạo ra một kiến trúc tốt hơn nhằm thay thế cho các approaches không thực sự còn hợp thời nữa, đặc biệt là các concepts trong Clean Architecture. Bài viết này mình sẻ thảo luận về một số mục chính sau:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">What and Why Golang?</title><link href="https://romeo.vn/introduce-to-golang/" rel="alternate" type="text/html" title="What and Why Golang?" /><published>2018-03-28T21:20:00-05:00</published><updated>2018-03-28T21:20:00-05:00</updated><id>https://romeo.vn/introduce-to-golang</id><content type="html" xml:base="https://romeo.vn/introduce-to-golang/">&lt;p&gt;Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Xét về khía cạnh technical:
+    &lt;ul&gt;
+      &lt;li&gt;Mức độ trưởng thành, hoàn thiện của Golang&lt;/li&gt;
+      &lt;li&gt;Tốc độ của Golang&lt;/li&gt;
+      &lt;li&gt;Concurrency Model và mức độ sử dụng memory resource của Golang&lt;/li&gt;
+      &lt;li&gt;Error Handling trong Golang&lt;/li&gt;
+      &lt;li&gt;Các Paradigms và Design Parterns mà Go hổ trợ&lt;/li&gt;
+      &lt;li&gt;Code transparency&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Xét về khía cạnh business:
+    &lt;ul&gt;
+      &lt;li&gt;Mức độ hạnh phúc của developers&lt;/li&gt;
+      &lt;li&gt;Tốc độ phát triển&lt;/li&gt;
+      &lt;li&gt;Khía cạnh Human Resource&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Conclusion:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;a-xét-về-khía-cạnh-technical&quot;&gt;A. Xét về khía cạnh technical:&lt;/h3&gt;
+&lt;h4 id=&quot;1-mức-độ-trưởng-thành-ổn-định-của-golang&quot;&gt;1. Mức độ trưởng thành, ổn định của Golang:&lt;/h4&gt;
+&lt;p&gt;Để make một decision chọn một ngôn ngữ, công nghệ cho việc build một hệ thống, một service có thể chạy ổn định từ năm này qua tháng nọ thì mức độ trưởng thành, hoàn thiện của công nghệ đó là một khía cạnh đáng xem xét.&lt;/p&gt;
+
+&lt;p&gt;Go tuy là một ngôn ngữ còn khá trẻ, được phát triển bởi Google bắt đầu từ năm 2007 và ra phiên bản đầu tiên vào tháng 12 năm 2012. Tuy nhiên lại có độ trưởng thành và ổn định cao. Sinh sau đẻ muộn nhưng sự phát triển mạnh mẻ của cộng đồng Gopher hiện tại thực sự đáng gờm đối với các hệ sinh thái Java, C#. Go cung cấp một bộ thư viện chuẩn phong phú cùng với một hệ sinh thái open source giàu có nhờ cộng đồng lớn.&lt;/p&gt;
+
+&lt;p&gt;Tuy không thể so sánh được với Java, C# về độ stable nhưng với các ngôn ngữ non trẻ như Node.js chẳng hạn thì Go thực sự già dơ hơn nhiều. Go ít sự thay đổi hơn và dù có thay đổi cũng ít khi gây ảnh hưởng lớn đến version củ.&lt;/p&gt;
+
+&lt;p&gt;Do đó xét về mức độ trưởng thành, ổn định Go hoàn toàn xứng đáng được chọn là công nghệ chỉ xếp sau Java, C#.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-tốc-độ-của-golang&quot;&gt;2. Tốc độ của Golang:&lt;/h4&gt;
+&lt;p&gt;Về điểm này thì theo cái nhân mình Go xứng đáng được đánh giá là chỉ xếp sau C, Elixir và Rust trong các ngôn ngữ phổ biến cho Back End.&lt;/p&gt;
+
+&lt;p&gt;Go code được complile trực tiếp sang mã máy do đó có một tốc độ bàn thờ. Trong lúc các ngôn ngữ như Java, Node.js có các yếu tố trung gian làm ảnh hưởng phần nào đến tốc độ.&lt;/p&gt;
+
+&lt;p&gt;Node.Js là runtime sử dụng bộ V8 của Google biên dịch code Javascript sang mã máy. Có thể nói Node.Js là một nữa thông dịch một nữa biên dịch dựa vào V8. Mặc dù Node.js optimize quá trình biên dịch bằng cách dùng cache để biên dịch nhanh hơn. Nhưng nhìn chung Node.js vẫn chủ yếu thông dịch nên có tốc độ thấp hơn đáng kể so với các ngôn ngữ biên dịch như Java hay Go.&lt;/p&gt;
+
+&lt;p&gt;Bên cạnh đó thì code Java được biên dịch sang các binary file. Các binary file đó lại được sử dụng trên Java Virtual Machine(JVM) cho việc thực thi. Java bytecode được thông dịch bằng JVM cuối cùng JVM mới chuyển Java bytecode sang mã máy sử dụng một Just-In-Time (JIT) compiler sau đó mới thực thi. Việc có một chút yếu tốc thông dịch cũng như yếu tố trung gian như JIT Compiler khiến cho Java có phần chậm hơn Go.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-concurrency-model-và-mức-độ-sử-dụng-memory-resource-của-golang&quot;&gt;3. Concurrency Model và mức độ sử dụng memory resource của Golang&lt;/h4&gt;
+&lt;p&gt;Ngoài một tốc độ bàn thờ ra thì lợi thế mạnh nhất của Golang đó chính là chức năng hổ trợ concurrency dựng sẳn trong ngôn ngữ cùng với khả năng tận dụng bộ xử lí đa lõi.&lt;/p&gt;
+
+&lt;p&gt;Ngày nay phần cứng máy tính đã phát triển để có nhiều lõi CPU và nhiều sức mạnh hơn, nhưng sức mạnh của máy tính hiện đại không thể được tận dụng bằng cách sử dụng các ngôn ngữ lập trình chỉ support đơn core.&lt;/p&gt;
+
+&lt;p&gt;Trong một số môi trường lập trình, concurrency và parallelism cho hiệu quả và hiệu năng tốt, nhưng các tính năng này là một thư viện hay framework riêng biệt, chứ không phải là một tính năng tích hợp sẳn ở cấp độ ngôn ngữ. Do đó để lập trình concurrency hay parallelism đôi lúc lại làm tăng thêm sự phức tạp khi bạn viết các ứng dụng concurrent.&lt;/p&gt;
+
+&lt;p&gt;Trong Go, concurrency được xây dựng sẳn và được thiết kế để viết các ứng dụng concurrent hiệu suất cao cho các máy tính hiện đại, có thể tận dụng multi proccessor.&lt;/p&gt;
+
+&lt;p&gt;Với hiểu biết cá nhân mình thì hiện tại các ứng dụng web sử dụng 3 Concurrency model chủ yếu đó là Assembly Line model, Parallel Worker model(đây gọi là parallel thì đúng hơn nhưng cứ tạm gọi là Concurrency model cho thuận miệng) và Communicating Sequential Processes model(CSP).&lt;/p&gt;
+
+&lt;p&gt;Trong quá trình học tập với Java mình chủ yếu được giới thiệu về mô hình Parallel Worker. Với mô hình này chúng ta sẻ config trước một thread pool với số lượng thread có hạn, đồng thời stack size của mỗi thread cũng được config cứng(default là 1Mb) mỗi một request tới sẻ được assign cho một worker(OS thread). Với model này trong Java chúng ta sẻ có một số vấn đề:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Vấn đề đầu tiên chúng ta có thể thấy đó là giới hạn số thread. Rõ ràng giả xử với 1Mb config cho mỗi thread thì maximum 1 Gb Ram chúng ta cũng chỉ xử lí được 1024 requests(chưa kể trừ hao cho context switching cost, heap,…).&lt;/li&gt;
+  &lt;li&gt;Một vấn đề nữa đó là Garbage-Collection Pause Time. Khi trình dọn rác thực thi việc dọn dẹp bộ nhớ heap có thể sẻ block tất cả thread do đó có độ trể nhất định ở đây.&lt;/li&gt;
+  &lt;li&gt;Vấn đề thứ ba đến từ cơ chế parallel. Java có được tính concurrency dựa vào việc share memory giữa các threads. Việc share memory này dẫn đến các vấn đề muôn thuở đó là deadlock, race condition…&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Mình đang làm việc chủ yếu với Node.js với concurrency model là Assembly Line(cũng được gọi là Reactive model hoặc Event Driven model). Node.js đạt được tính concurrecy nhờ vào cái Event Loop. Với mô hình này thì Node.js thực sự mạnh mẻ trong việc sử lí I/O với cơ chế Non-Blocking I/O. Nhìn chung Node.js ít gặo các vấn đề mà Java gặp phãi tuy nhiên lại gặp vấn đề lớn hơn đó là các request sẻ bị block lẫn nhau khi sử dụng các CPU-intensive programming tasks(tác vụ tính toán chuyên sâu). Nếu một service tính toán nhiều mà sử dụng Node.js thì thực sự độ trể sẻ rất cao khi có nhiều request đồng thời đến.&lt;/p&gt;
+
+&lt;p&gt;Sử dụng Event Loop cho quá trình xử lí concurrent request về lí thuyết sẻ giúp Node.js sử dụng ít memory hơn tuy nhiên trong thực tế trình dọn rác của Node.js tương đối kém dẫn đến ngốn ram, cpu sau một thời gian chạy mà không rõ nguyên do dù đã detect rất kĩ các nguyên nhân dẫn đến memory leak.&lt;/p&gt;
+
+&lt;p&gt;Golang thì sao?, concurrency model trong Golang có những điểm gì mạnh mẻ?&lt;/p&gt;
+
+&lt;p&gt;Go đạt được tính concurrency bằng việc sử dụng Communicating Sequential Processes(CSP) model dựa trên các tính năng được build sẳn trong Go như Go Runtine, Channel, các câu lệnh select,…&lt;/p&gt;
+
+&lt;p&gt;Mô hình này được implement dựa trên việc gửi và nhận message giứa các tiến trình(Go Runtines), các synchronous communication được thực hiện thông qua các channel, các channel cùng với việc sử dụng các câu lệnh select cũng giúp chúng ta chủ động hơn trong việc scheduling. Tuy rằng trong Go cũng có các vấn đề về Deadlock, Race Condition tuy nhiên Go Tool cũng support các công cụ thực sự mạnh mẻ cho việc detect các vấn đề này sớm.&lt;/p&gt;
+
+&lt;p&gt;Bên cạnh đó Go cũng rất tiết kiệm memory khi sử dụng các Go Rountine rất rẻ với 4kb Stack Size chi phí khởi tạo ban đầu và các Go Rountine cũng scale rất dynamic, chúng có thể scale lên đến 1Gb.&lt;/p&gt;
+
+&lt;p&gt;Nhìn chung về yếu tố concurrency và mức độ sử dụng memory go đang khá lợi thế với các ngôn ngữ khác. Build-in Concurrency là lý do chính cho việc sử dụng Go như một ngôn ngữ để xây dựng các hệ thống phần mềm hiệu quả cao với hiệu năng cao hơn.&lt;/p&gt;
+
+&lt;p&gt;Mình chưa biết Rust nên không dám phán nhiều :)))&lt;/p&gt;
+
+&lt;h4 id=&quot;5-error-handling-trong-golang&quot;&gt;5. Error Handling trong Golang&lt;/h4&gt;
+&lt;p&gt;Golang yêu cầu kiểm tra lỗi một cách rõ ràng, mỗi một hàm nên trả lỗi và check lỗi ngay khi gọi hàm. Việc check lỗi khắp mọi nơi, nhìn chung khá vất vã. Tuy nhiên, với cá nhân mình thấy việc xử lý lỗi trên Golang là rất nhất quán và hoàn hảo, không như cách implement throw/catch truyền thống trên Node.js và Java, ngày trước mình rất bực với những exception như “null pointer exception”.&lt;/p&gt;
+
+&lt;h4 id=&quot;6-các-paradigms-và-design-parterns-mà-go-hổ-trợ&quot;&gt;6. Các Paradigms và Design Parterns mà Go hổ trợ&lt;/h4&gt;
+&lt;p&gt;Golang có thể được gọi là multi paradigm programming language.&lt;/p&gt;
+
+&lt;p&gt;Với các tín đồ Functional Programming, Go hổ trợ first-class functions, anonymous functions, closures gíup dễ implement các technique trong functional. Hơn nữa Gopher ưu tiên composition over inheritance phù hợp với các tín đồ functional.&lt;/p&gt;
+
+&lt;p&gt;Với tín đồ OOP, Go hổ trợ struct được sử dụng với một số chức năng giống với class, kế thừa dựa vào việc sử dụng các embedded struct. Bên cạnh đó Interface cũng là công cụ mạnh mẻ để implement tính Polymorphism trong OOP cũng như implement theo nguyên tắc Dependency Inversion.&lt;/p&gt;
+
+&lt;h4 id=&quot;7-code-transparency&quot;&gt;7. Code Transparency&lt;/h4&gt;
+&lt;p&gt;Về cú pháp Go support một code format tool chuẩn và code generate tool chuẩn đó là fmt tool. Bộ tool này phần nào giúp thống nhất code convention của tất cả Gopher thay vì dựa vào các convention các ông lớn đưa ra như AirBnB convention trong Javascript chẳng hạn. Thứ hai là một chương trình Go sẻ không compile được nếu import một package mà không sử dụng phần nào giúp code đở rối.&lt;/p&gt;
+
+&lt;p&gt;Về các quy ước tổ chức modules, packages thì Go nói không với circular dependencies. Mình thực sự bực mình với các thể loại circular dependencies, mỗi khi có bug hoặc vấn đề gì đó detect rất cực. Với một chương trình viết bằng Go thì chúng ta sẻ không thể compile nếu tồn tại circular dependencies.&lt;/p&gt;
+
+&lt;h3 id=&quot;b-xét-về-khía-cạnh-business&quot;&gt;B. Xét về khía cạnh business:&lt;/h3&gt;
+&lt;h4 id=&quot;1-mức-độ-hạnh-phúc-của-developer&quot;&gt;1. Mức độ hạnh phúc của developer&lt;/h4&gt;
+&lt;p&gt;Tại sao mình lại đặt mức độ hạnh phúc của Developer trong khía cạnh business. Rõ ràng nếu các Engineer thực sự vui vẻ hạnh phúc thì chất lượng cũng như tốc độ phát triển sẻ cải thiện hơn so với việc sử dụng một ngôn ngữ gây khó chịu ức chế cho Developer rồi.&lt;/p&gt;
+
+&lt;p&gt;Golang là một ngôn ngữ tối giản, có độ biểu cảm(expressive) cao cùng với sự support tương thích với các paradigms phần nào giúp developer vui vẻ hạnh phúc hơn khi làm việc với Go. Khi tìm hiểu bạn có thể thấy được sự đơn giản trong tất cả các tính năng của Go bao gồm cả hệ thống kiểu dữ liệu, cú pháp,… . Nhiều ngôn ngữ lập trình cung cấp quá nhiều tính năng giúp Dev dễ dàng làm việc hơn nhưng vô hình chung làm cho nó trở nên phức tạp hơn, ức chế hơn. Mục tiêu thiết kế của Go là một ngôn ngữ đơn giản và chỉ cung cấp tất cả các tính năng cần thiết tối thiểu để phát triển các hệ thống phần mềm một hiệu quả, đó cũng giúp dev vui vẻ hạnh phúc hơn.&lt;/p&gt;
+
+&lt;p&gt;Đối với các Javascript developer thì họ cực kì thích Go ở việc Go là ngôn ngữ được xây dựng khá giống như C - ngôn ngữ mà Javascript xây dựng dựa trên đó. Họ thực sự yêu thích Golang nhờ nó cực kì strictly typing. Là ngôn ngữ static type nên khi lập trình với Go gần như là không có runtime error(trừ khi bạn quá lạm dụng reflect).&lt;/p&gt;
+
+&lt;p&gt;Đối với các Java/C++ developers cũng vậy, với các Java/C++ developers họ cực kì mệt mỏi vì thời gian build quá lâu. Đối với Go, là một ngôn ngữ biên dịch và static type tuy nhiên khi làm việc với Go chúng ta có cảm giác như đang làm việc với một ngôn ngữ Dynamic Type hơn. Điều đó khiến các lập trình viên Back End với Java khi chuyển quá làm Go thực sự sướng.&lt;/p&gt;
+
+&lt;p&gt;Bên cạnh đó Go cũng có một số thiếu xót làm các Engineer ức chế, ví dụ như không support Generic, không support các constructs như Map, Reduce,… Là một ngôn ngữ biên dịch, static type mà lại không support Generic như Java làm các Developer khó viết code reusable hơn, việc duplicate code làm họ thực sự khó chịu. Tuy nhiên cũng có một số kĩ thuật giúp chúng ta viết code generic hơn như sử dụng các Closure, Callback, Higher-Order Function và Reflect cũng phần nào nguôi ngoai được thiếu xót từ Generic và các constructs.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-tốc-độ-phát-triển-product&quot;&gt;2. Tốc độ phát triển product&lt;/h4&gt;
+&lt;p&gt;Đây là một mục tiêu rất quan trọng việc phát triển các product. Thời gian ra thị trường nhanh giúp các product tự tin thực hiện các chiến lược business hơn. Đối với các ngôn ngữ mạnh trong khoản mì ăn liền như Javascript, Ruby thì Go không có cửa so sánh. Tuy nhiên đối với các ngôn ngữ như Java, C#, C++ thì có thể Go có lợi thế hơn.&lt;/p&gt;
+
+&lt;p&gt;Với việc là một ngôn ngữ biên dịch, static type nhưng cảm giác như là ngôn ngữ thông dịch, dynamic type khiến cho tốc độ phát triển sản phẩm nhanh hơn đôi chút so với Java. Cùng với đó là hệ sinh thái open source ngày càng màu mở cũng nâng cao tốc độ phát triển sản phẩm hơn trước.&lt;/p&gt;
+
+&lt;p&gt;Lợi thế trong việc mang lại sự vui vẻ hạnh phúc cho developer cũng giúp rút ngắn thời gian ra thị trường hơn đối với các ứng dụng được xây dựng với Golang.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-human-resource&quot;&gt;3. Human Resource&lt;/h4&gt;
+&lt;p&gt;Golang được biết đến là ngôn ngữ đa năng, Go có thể build mobile app, system infrastructure, web app, back end,…Tuy nhiên Go vẫn chỉ sử dụng nhiều nhất cho việc xây dựng Back End cho các hệ thống. Với Go chúng ta không thể apply fullstack culture như đối với Javascript.&lt;/p&gt;
+
+&lt;p&gt;Tuy nhiên tính đơn giản, thực dụng của Go cũng mang lại nhiều lợi ích đáng kể trong vấn đề Human Resource. Go quá tối giản do đó việc học Go là rất nhanh, với mình một người khá chậm tuy nhiên mình tự tin sau tầm 2 tuần là tự tin làm việc được trong dự án. Do đó với Go các công ty dễ dàng đào tạo một bạn sinh viên trở thành một junior developer chất lượng sau 1-3 tháng. Cũng nhờ tính đơn giản, biểu cảm và dễ hiểu, việc transfer một service, ứng dụng với Golang cũng diễn ra rất nhanh giúp người quản lí dễ dàng hơn, linh hoạt hơn trong các giải pháp chuyển giao, backup…&lt;/p&gt;
+
+&lt;p&gt;Tuy nhiên với một ngôn ngữ trẻ như Go với số lượng it Developer có kinh nghiệm cũng gây khó khăn cho nhà tuyển dụng.&lt;/p&gt;
+
+&lt;h3 id=&quot;c-conclusion&quot;&gt;C. Conclusion:&lt;/h3&gt;
+&lt;p&gt;Nhìn chung Go khá là imperative cá nhân mình không thích style này. Tuy nhiên với cái nhìn của một Back End developer, mình thấy ở Go là một ngôn ngữ expressive, tối giản và hiệu quả cùng với tính năng concurrent built-in và khả năng tận dụng multi-core thì Go thực sự đáng được lựa chọn cho việc xây dựng các ứng dụng back end với hiệu xuất và concurrency cao. Go support tốt các paradim, flexible và dễ module hoá, dễ layered sẻ thực sự hữu ích cho việc dựng architecture. Cùng với đó, Go là một ngôn ngữ biên dịch, static type nhưng lại flexible như một ngôn ngữ thông dịch, dynamic type sẻ giúp nâng cao hiệu suất làm việc hơn. Còn đối với các bạn thì sao, nếu có cách nhìn nào khác thì giúp mình góp ý nhé.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="nodejs" /><category term="eventloop" /><category term="singlethreaded" /><summary type="html">Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Solid Principle</title><link href="https://romeo.vn/solid-principle/" rel="alternate" type="text/html" title="Solid Principle" /><published>2018-01-12T01:01:00-06:00</published><updated>2018-01-12T01:01:00-06:00</updated><id>https://romeo.vn/solid-principle</id><content type="html" xml:base="https://romeo.vn/solid-principle/">&lt;p&gt;Hệ thống phần mềm tốt phãi bắt đầu bằng code sạch. Cũng giống như việc xây nhà, bắt đầu chúng ta cần những viên gạch tốt đã, nhưng những viên gạch đã không tốt thì kiến ​​trúc của tòa nhà không còn quan trọng nữa vì nó đã dễ dàng sụp đổ rồi. Một mặt khác, khi bạn có các viên gạch tốt rồi nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn từ những viên gạch tốt đó. Do đó Solid đến và giúp chúng ta xây dựng các kiến trúc tốt dựa trên các viên gạch tốt.&lt;/p&gt;
 
 &lt;p&gt;Nguyên tắc SOLID cho chúng ta biết cách sắp xếp các hàm, cấu trúc dữ liệu của chúng ta vào các lớp và kết nối chúng lại với nhau để xây dựng nên hệ thống. Việc sử dụng từ class không có nghĩa rằng các nguyên tắc này chỉ áp dụng cho phần mềm hướng đối tượng. Một class đơn giản là một nhóm các hàm và dữ liệu được ghép đôi. Mọi hệ thống phần mềm đều có các nhóm như vậy cho dù chúng có được gọi là các class hay không thì nguyên tắc SOLID vẫn sẻ áp dụng được cho các nhóm đó.&lt;/p&gt;
 
@@ -909,122 +1052,4 @@ Bất cứ khi nào khai báo đối tượng thì các giá trị của đối 
 
 &lt;h3 id=&quot;3-queue&quot;&gt;3. Queue:&lt;/h3&gt;
 
-&lt;p&gt;Đối với Javascript runtime thì có thêm một thành phần nữa đó là queue, đây là danh sách các message cần được sử lí và các hàm callback liên quan thực thi. Nói dễ hiểu hơn là các message này sẻ được lưu vào queue để phản hồi các sự kiện async bên ngoài chẳng hạn như sự kiện nhấp chuột hay một http reuquest với một callback được cung cấp.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><summary type="html">1. Stack:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">What and Why Golang?</title><link href="https://romeo.vn/gioi-thieu-ngon-ngu-golang/" rel="alternate" type="text/html" title="What and Why Golang?" /><published>2017-01-28T21:20:00-06:00</published><updated>2017-01-28T21:20:00-06:00</updated><id>https://romeo.vn/gioi-thieu-ngon-ngu-golang</id><content type="html" xml:base="https://romeo.vn/gioi-thieu-ngon-ngu-golang/">&lt;p&gt;Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Xét về khía cạnh technical:
-    &lt;ul&gt;
-      &lt;li&gt;Mức độ trưởng thành, hoàn thiện của Golang&lt;/li&gt;
-      &lt;li&gt;Tốc độ của Golang&lt;/li&gt;
-      &lt;li&gt;Concurrency Model và mức độ sử dụng memory resource của Golang&lt;/li&gt;
-      &lt;li&gt;Error Handling trong Golang&lt;/li&gt;
-      &lt;li&gt;Các Paradigms và Design Parterns mà Go hổ trợ&lt;/li&gt;
-      &lt;li&gt;Code transparency&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Xét về khía cạnh business:
-    &lt;ul&gt;
-      &lt;li&gt;Mức độ hạnh phúc của developers&lt;/li&gt;
-      &lt;li&gt;Tốc độ phát triển&lt;/li&gt;
-      &lt;li&gt;Khía cạnh Human Resource&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Conclusion:&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;a-xét-về-khía-cạnh-technical&quot;&gt;A. Xét về khía cạnh technical:&lt;/h3&gt;
-&lt;h4 id=&quot;1-mức-độ-trưởng-thành-ổn-định-của-golang&quot;&gt;1. Mức độ trưởng thành, ổn định của Golang:&lt;/h4&gt;
-&lt;p&gt;Để make một decision chọn một ngôn ngữ, công nghệ cho việc build một hệ thống, một service có thể chạy ổn định từ năm này qua tháng nọ thì mức độ trưởng thành, hoàn thiện của công nghệ đó là một khía cạnh đáng xem xét.&lt;/p&gt;
-
-&lt;p&gt;Go tuy là một ngôn ngữ còn khá trẻ, được phát triển bởi Google bắt đầu từ năm 2007 và ra phiên bản đầu tiên vào tháng 12 năm 2012. Tuy nhiên lại có độ trưởng thành và ổn định cao. Sinh sau đẻ muộn nhưng sự phát triển mạnh mẻ của cộng đồng Gopher hiện tại thực sự đáng gờm đối với các hệ sinh thái Java, C#. Go cung cấp một bộ thư viện chuẩn phong phú cùng với một hệ sinh thái open source giàu có nhờ cộng đồng lớn.&lt;/p&gt;
-
-&lt;p&gt;Tuy không thể so sánh được với Java, C# về độ stable nhưng với các ngôn ngữ non trẻ như Node.js chẳng hạn thì Go thực sự già dơ hơn nhiều. Go ít sự thay đổi hơn và dù có thay đổi cũng ít khi gây ảnh hưởng lớn đến version củ.&lt;/p&gt;
-
-&lt;p&gt;Do đó xét về mức độ trưởng thành, ổn định Go hoàn toàn xứng đáng được chọn là công nghệ chỉ xếp sau Java, C#.&lt;/p&gt;
-
-&lt;h4 id=&quot;2-tốc-độ-của-golang&quot;&gt;2. Tốc độ của Golang:&lt;/h4&gt;
-&lt;p&gt;Về điểm này thì theo cái nhân mình Go xứng đáng được đánh giá là chỉ xếp sau C, Elixir và Rust trong các ngôn ngữ phổ biến cho Back End.&lt;/p&gt;
-
-&lt;p&gt;Go code được complile trực tiếp sang mã máy do đó có một tốc độ bàn thờ. Trong lúc các ngôn ngữ như Java, Node.js có các yếu tố trung gian làm ảnh hưởng phần nào đến tốc độ.&lt;/p&gt;
-
-&lt;p&gt;Node.Js là runtime sử dụng bộ V8 của Google biên dịch code Javascript sang mã máy. Có thể nói Node.Js là một nữa thông dịch một nữa biên dịch dựa vào V8. Mặc dù Node.js optimize quá trình biên dịch bằng cách dùng cache để biên dịch nhanh hơn. Nhưng nhìn chung Node.js vẫn chủ yếu thông dịch nên có tốc độ thấp hơn đáng kể so với các ngôn ngữ biên dịch như Java hay Go.&lt;/p&gt;
-
-&lt;p&gt;Bên cạnh đó thì code Java được biên dịch sang các binary file. Các binary file đó lại được sử dụng trên Java Virtual Machine(JVM) cho việc thực thi. Java bytecode được thông dịch bằng JVM cuối cùng JVM mới chuyển Java bytecode sang mã máy sử dụng một Just-In-Time (JIT) compiler sau đó mới thực thi. Việc có một chút yếu tốc thông dịch cũng như yếu tố trung gian như JIT Compiler khiến cho Java có phần chậm hơn Go.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-concurrency-model-và-mức-độ-sử-dụng-memory-resource-của-golang&quot;&gt;3. Concurrency Model và mức độ sử dụng memory resource của Golang&lt;/h4&gt;
-&lt;p&gt;Ngoài một tốc độ bàn thờ ra thì lợi thế mạnh nhất của Golang đó chính là chức năng hổ trợ concurrency dựng sẳn trong ngôn ngữ cùng với khả năng tận dụng bộ xử lí đa lõi.&lt;/p&gt;
-
-&lt;p&gt;Ngày nay phần cứng máy tính đã phát triển để có nhiều lõi CPU và nhiều sức mạnh hơn, nhưng sức mạnh của máy tính hiện đại không thể được tận dụng bằng cách sử dụng các ngôn ngữ lập trình chỉ support đơn core.&lt;/p&gt;
-
-&lt;p&gt;Trong một số môi trường lập trình, concurrency và parallelism cho hiệu quả và hiệu năng tốt, nhưng các tính năng này là một thư viện hay framework riêng biệt, chứ không phải là một tính năng tích hợp sẳn ở cấp độ ngôn ngữ. Do đó để lập trình concurrency hay parallelism đôi lúc lại làm tăng thêm sự phức tạp khi bạn viết các ứng dụng concurrent.&lt;/p&gt;
-
-&lt;p&gt;Trong Go, concurrency được xây dựng sẳn và được thiết kế để viết các ứng dụng concurrent hiệu suất cao cho các máy tính hiện đại, có thể tận dụng multi proccessor.&lt;/p&gt;
-
-&lt;p&gt;Với hiểu biết cá nhân mình thì hiện tại các ứng dụng web sử dụng 3 Concurrency model chủ yếu đó là Assembly Line model, Parallel Worker model(đây gọi là parallel thì đúng hơn nhưng cứ tạm gọi là Concurrency model cho thuận miệng) và Communicating Sequential Processes model(CSP).&lt;/p&gt;
-
-&lt;p&gt;Trong quá trình học tập với Java mình chủ yếu được giới thiệu về mô hình Parallel Worker. Với mô hình này chúng ta sẻ config trước một thread pool với số lượng thread có hạn, đồng thời stack size của mỗi thread cũng được config cứng(default là 1Mb) mỗi một request tới sẻ được assign cho một worker(OS thread). Với model này trong Java chúng ta sẻ có một số vấn đề:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Vấn đề đầu tiên chúng ta có thể thấy đó là giới hạn số thread. Rõ ràng giả xử với 1Mb config cho mỗi thread thì maximum 1 Gb Ram chúng ta cũng chỉ xử lí được 1024 requests(chưa kể trừ hao cho context switching cost, heap,…).&lt;/li&gt;
-  &lt;li&gt;Một vấn đề nữa đó là Garbage-Collection Pause Time. Khi trình dọn rác thực thi việc dọn dẹp bộ nhớ heap có thể sẻ block tất cả thread do đó có độ trể nhất định ở đây.&lt;/li&gt;
-  &lt;li&gt;Vấn đề thứ ba đến từ cơ chế parallel. Java có được tính concurrency dựa vào việc share memory giữa các threads. Việc share memory này dẫn đến các vấn đề muôn thuở đó là deadlock, race condition…&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Mình đang làm việc chủ yếu với Node.js với concurrency model là Assembly Line(cũng được gọi là Reactive model hoặc Event Driven model). Node.js đạt được tính concurrecy nhờ vào cái Event Loop. Với mô hình này thì Node.js thực sự mạnh mẻ trong việc sử lí I/O với cơ chế Non-Blocking I/O. Nhìn chung Node.js ít gặo các vấn đề mà Java gặp phãi tuy nhiên lại gặp vấn đề lớn hơn đó là các request sẻ bị block lẫn nhau khi sử dụng các CPU-intensive programming tasks(tác vụ tính toán chuyên sâu). Nếu một service tính toán nhiều mà sử dụng Node.js thì thực sự độ trể sẻ rất cao khi có nhiều request đồng thời đến.&lt;/p&gt;
-
-&lt;p&gt;Sử dụng Event Loop cho quá trình xử lí concurrent request về lí thuyết sẻ giúp Node.js sử dụng ít memory hơn tuy nhiên trong thực tế trình dọn rác của Node.js tương đối kém dẫn đến ngốn ram, cpu sau một thời gian chạy mà không rõ nguyên do dù đã detect rất kĩ các nguyên nhân dẫn đến memory leak.&lt;/p&gt;
-
-&lt;p&gt;Golang thì sao?, concurrency model trong Golang có những điểm gì mạnh mẻ?&lt;/p&gt;
-
-&lt;p&gt;Go đạt được tính concurrency bằng việc sử dụng Communicating Sequential Processes(CSP) model dựa trên các tính năng được build sẳn trong Go như Go Runtine, Channel, các câu lệnh select,…&lt;/p&gt;
-
-&lt;p&gt;Mô hình này được implement dựa trên việc gửi và nhận message giứa các tiến trình(Go Runtines), các synchronous communication được thực hiện thông qua các channel, các channel cùng với việc sử dụng các câu lệnh select cũng giúp chúng ta chủ động hơn trong việc scheduling. Tuy rằng trong Go cũng có các vấn đề về Deadlock, Race Condition tuy nhiên Go Tool cũng support các công cụ thực sự mạnh mẻ cho việc detect các vấn đề này sớm.&lt;/p&gt;
-
-&lt;p&gt;Bên cạnh đó Go cũng rất tiết kiệm memory khi sử dụng các Go Rountine rất rẻ với 4kb Stack Size chi phí khởi tạo ban đầu và các Go Rountine cũng scale rất dynamic, chúng có thể scale lên đến 1Gb.&lt;/p&gt;
-
-&lt;p&gt;Nhìn chung về yếu tố concurrency và mức độ sử dụng memory go đang khá lợi thế với các ngôn ngữ khác. Build-in Concurrency là lý do chính cho việc sử dụng Go như một ngôn ngữ để xây dựng các hệ thống phần mềm hiệu quả cao với hiệu năng cao hơn.&lt;/p&gt;
-
-&lt;p&gt;Mình chưa biết Rust nên không dám phán nhiều :)))&lt;/p&gt;
-
-&lt;h4 id=&quot;5-error-handling-trong-golang&quot;&gt;5. Error Handling trong Golang&lt;/h4&gt;
-&lt;p&gt;Golang yêu cầu kiểm tra lỗi một cách rõ ràng, mỗi một hàm nên trả lỗi và check lỗi ngay khi gọi hàm. Việc check lỗi khắp mọi nơi, nhìn chung khá vất vã. Tuy nhiên, với cá nhân mình thấy việc xử lý lỗi trên Golang là rất nhất quán và hoàn hảo, không như cách implement throw/catch truyền thống trên Node.js và Java, ngày trước mình rất bực với những exception như “null pointer exception”.&lt;/p&gt;
-
-&lt;h4 id=&quot;6-các-paradigms-và-design-parterns-mà-go-hổ-trợ&quot;&gt;6. Các Paradigms và Design Parterns mà Go hổ trợ&lt;/h4&gt;
-&lt;p&gt;Golang có thể được gọi là multi paradigm programming language.&lt;/p&gt;
-
-&lt;p&gt;Với các tín đồ Functional Programming, Go hổ trợ first-class functions, anonymous functions, closures gíup dễ implement các technique trong functional. Hơn nữa Gopher ưu tiên composition over inheritance phù hợp với các tín đồ functional.&lt;/p&gt;
-
-&lt;p&gt;Với tín đồ OOP, Go hổ trợ struct được sử dụng với một số chức năng giống với class, kế thừa dựa vào việc sử dụng các embedded struct. Bên cạnh đó Interface cũng là công cụ mạnh mẻ để implement tính Polymorphism trong OOP cũng như implement theo nguyên tắc Dependency Inversion.&lt;/p&gt;
-
-&lt;h4 id=&quot;7-code-transparency&quot;&gt;7. Code Transparency&lt;/h4&gt;
-&lt;p&gt;Về cú pháp Go support một code format tool chuẩn và code generate tool chuẩn đó là fmt tool. Bộ tool này phần nào giúp thống nhất code convention của tất cả Gopher thay vì dựa vào các convention các ông lớn đưa ra như AirBnB convention trong Javascript chẳng hạn. Thứ hai là một chương trình Go sẻ không compile được nếu import một package mà không sử dụng phần nào giúp code đở rối.&lt;/p&gt;
-
-&lt;p&gt;Về các quy ước tổ chức modules, packages thì Go nói không với circular dependencies. Mình thực sự bực mình với các thể loại circular dependencies, mỗi khi có bug hoặc vấn đề gì đó detect rất cực. Với một chương trình viết bằng Go thì chúng ta sẻ không thể compile nếu tồn tại circular dependencies.&lt;/p&gt;
-
-&lt;h3 id=&quot;b-xét-về-khía-cạnh-business&quot;&gt;B. Xét về khía cạnh business:&lt;/h3&gt;
-&lt;h4 id=&quot;1-mức-độ-hạnh-phúc-của-developer&quot;&gt;1. Mức độ hạnh phúc của developer&lt;/h4&gt;
-&lt;p&gt;Tại sao mình lại đặt mức độ hạnh phúc của Developer trong khía cạnh business. Rõ ràng nếu các Engineer thực sự vui vẻ hạnh phúc thì chất lượng cũng như tốc độ phát triển sẻ cải thiện hơn so với việc sử dụng một ngôn ngữ gây khó chịu ức chế cho Developer rồi.&lt;/p&gt;
-
-&lt;p&gt;Golang là một ngôn ngữ tối giản, có độ biểu cảm(expressive) cao cùng với sự support tương thích với các paradigms phần nào giúp developer vui vẻ hạnh phúc hơn khi làm việc với Go. Khi tìm hiểu bạn có thể thấy được sự đơn giản trong tất cả các tính năng của Go bao gồm cả hệ thống kiểu dữ liệu, cú pháp,… . Nhiều ngôn ngữ lập trình cung cấp quá nhiều tính năng giúp Dev dễ dàng làm việc hơn nhưng vô hình chung làm cho nó trở nên phức tạp hơn, ức chế hơn. Mục tiêu thiết kế của Go là một ngôn ngữ đơn giản và chỉ cung cấp tất cả các tính năng cần thiết tối thiểu để phát triển các hệ thống phần mềm một hiệu quả, đó cũng giúp dev vui vẻ hạnh phúc hơn.&lt;/p&gt;
-
-&lt;p&gt;Đối với các Javascript developer thì họ cực kì thích Go ở việc Go là ngôn ngữ được xây dựng khá giống như C - ngôn ngữ mà Javascript xây dựng dựa trên đó. Họ thực sự yêu thích Golang nhờ nó cực kì strictly typing. Là ngôn ngữ static type nên khi lập trình với Go gần như là không có runtime error(trừ khi bạn quá lạm dụng reflect).&lt;/p&gt;
-
-&lt;p&gt;Đối với các Java/C++ developers cũng vậy, với các Java/C++ developers họ cực kì mệt mỏi vì thời gian build quá lâu. Đối với Go, là một ngôn ngữ biên dịch và static type tuy nhiên khi làm việc với Go chúng ta có cảm giác như đang làm việc với một ngôn ngữ Dynamic Type hơn. Điều đó khiến các lập trình viên Back End với Java khi chuyển quá làm Go thực sự sướng.&lt;/p&gt;
-
-&lt;p&gt;Bên cạnh đó Go cũng có một số thiếu xót làm các Engineer ức chế, ví dụ như không support Generic, không support các constructs như Map, Reduce,… Là một ngôn ngữ biên dịch, static type mà lại không support Generic như Java làm các Developer khó viết code reusable hơn, việc duplicate code làm họ thực sự khó chịu. Tuy nhiên cũng có một số kĩ thuật giúp chúng ta viết code generic hơn như sử dụng các Closure, Callback, Higher-Order Function và Reflect cũng phần nào nguôi ngoai được thiếu xót từ Generic và các constructs.&lt;/p&gt;
-
-&lt;h4 id=&quot;2-tốc-độ-phát-triển-product&quot;&gt;2. Tốc độ phát triển product&lt;/h4&gt;
-&lt;p&gt;Đây là một mục tiêu rất quan trọng việc phát triển các product. Thời gian ra thị trường nhanh giúp các product tự tin thực hiện các chiến lược business hơn. Đối với các ngôn ngữ mạnh trong khoản mì ăn liền như Javascript, Ruby thì Go không có cửa so sánh. Tuy nhiên đối với các ngôn ngữ như Java, C#, C++ thì có thể Go có lợi thế hơn.&lt;/p&gt;
-
-&lt;p&gt;Với việc là một ngôn ngữ biên dịch, static type nhưng cảm giác như là ngôn ngữ thông dịch, dynamic type khiến cho tốc độ phát triển sản phẩm nhanh hơn đôi chút so với Java. Cùng với đó là hệ sinh thái open source ngày càng màu mở cũng nâng cao tốc độ phát triển sản phẩm hơn trước.&lt;/p&gt;
-
-&lt;p&gt;Lợi thế trong việc mang lại sự vui vẻ hạnh phúc cho developer cũng giúp rút ngắn thời gian ra thị trường hơn đối với các ứng dụng được xây dựng với Golang.&lt;/p&gt;
-
-&lt;h4 id=&quot;3-human-resource&quot;&gt;3. Human Resource&lt;/h4&gt;
-&lt;p&gt;Golang được biết đến là ngôn ngữ đa năng, Go có thể build mobile app, system infrastructure, web app, back end,…Tuy nhiên Go vẫn chỉ sử dụng nhiều nhất cho việc xây dựng Back End cho các hệ thống. Với Go chúng ta không thể apply fullstack culture như đối với Javascript.&lt;/p&gt;
-
-&lt;p&gt;Tuy nhiên tính đơn giản, thực dụng của Go cũng mang lại nhiều lợi ích đáng kể trong vấn đề Human Resource. Go quá tối giản do đó việc học Go là rất nhanh, với mình một người khá chậm tuy nhiên mình tự tin sau tầm 2 tuần là tự tin làm việc được trong dự án. Do đó với Go các công ty dễ dàng đào tạo một bạn sinh viên trở thành một junior developer chất lượng sau 1-3 tháng. Cũng nhờ tính đơn giản, biểu cảm và dễ hiểu, việc transfer một service, ứng dụng với Golang cũng diễn ra rất nhanh giúp người quản lí dễ dàng hơn, linh hoạt hơn trong các giải pháp chuyển giao, backup…&lt;/p&gt;
-
-&lt;p&gt;Tuy nhiên với một ngôn ngữ trẻ như Go với số lượng it Developer có kinh nghiệm cũng gây khó khăn cho nhà tuyển dụng.&lt;/p&gt;
-
-&lt;h3 id=&quot;c-conclusion&quot;&gt;C. Conclusion:&lt;/h3&gt;
-&lt;p&gt;Nhìn chung Go khá là imperative cá nhân mình không thích style này. Tuy nhiên với cái nhìn của một Back End developer, mình thấy ở Go là một ngôn ngữ expressive, tối giản và hiệu quả cùng với tính năng concurrent built-in và khả năng tận dụng multi-core thì Go thực sự đáng được lựa chọn cho việc xây dựng các ứng dụng back end với hiệu xuất và concurrency cao. Go support tốt các paradim, flexible và dễ module hoá, dễ layered sẻ thực sự hữu ích cho việc dựng architecture. Cùng với đó, Go là một ngôn ngữ biên dịch, static type nhưng lại flexible như một ngôn ngữ thông dịch, dynamic type sẻ giúp nâng cao hiệu suất làm việc hơn. Còn đối với các bạn thì sao, nếu có cách nhìn nào khác thì giúp mình góp ý nhé.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="nodejs" /><category term="eventloop" /><category term="singlethreaded" /><summary type="html">Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry></feed>
+&lt;p&gt;Đối với Javascript runtime thì có thêm một thành phần nữa đó là queue, đây là danh sách các message cần được sử lí và các hàm callback liên quan thực thi. Nói dễ hiểu hơn là các message này sẻ được lưu vào queue để phản hồi các sự kiện async bên ngoài chẳng hạn như sự kiện nhấp chuột hay một http reuquest với một callback được cung cấp.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><summary type="html">1. Stack:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry></feed>

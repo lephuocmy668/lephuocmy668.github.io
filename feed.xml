@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-09T05:28:21-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-09T08:49:51-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
 
 &lt;p&gt;Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
 &lt;ul&gt;
@@ -836,49 +836,48 @@ Với tất cả hệ thống thì thành phần quan trọng nhất của nó l
 &lt;p&gt;Tuy nhiên với một ngôn ngữ trẻ như Go với số lượng it Developer có kinh nghiệm cũng gây khó khăn cho nhà tuyển dụng.&lt;/p&gt;
 
 &lt;h3 id=&quot;c-conclusion&quot;&gt;C. Conclusion:&lt;/h3&gt;
-&lt;p&gt;Nhìn chung Go khá là imperative cá nhân mình không thích style này. Tuy nhiên với cái nhìn của một Back End developer, mình thấy ở Go là một ngôn ngữ expressive, tối giản và hiệu quả cùng với tính năng concurrent built-in và khả năng tận dụng multi-core thì Go thực sự đáng được lựa chọn cho việc xây dựng các ứng dụng back end với hiệu xuất và concurrency cao. Go support tốt các paradim, flexible và dễ module hoá, dễ layered sẻ thực sự hữu ích cho việc dựng architecture. Cùng với đó, Go là một ngôn ngữ biên dịch, static type nhưng lại flexible như một ngôn ngữ thông dịch, dynamic type sẻ giúp nâng cao hiệu suất làm việc hơn. Còn đối với các bạn thì sao, nếu có cách nhìn nào khác thì giúp mình góp ý nhé.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="nodejs" /><category term="eventloop" /><category term="singlethreaded" /><summary type="html">Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Solid Principle</title><link href="https://romeo.vn/solid-principle/" rel="alternate" type="text/html" title="Solid Principle" /><published>2018-01-12T01:01:00-06:00</published><updated>2018-01-12T01:01:00-06:00</updated><id>https://romeo.vn/solid-principle</id><content type="html" xml:base="https://romeo.vn/solid-principle/">&lt;p&gt;Hệ thống phần mềm tốt phãi bắt đầu bằng code sạch. Cũng giống như việc xây nhà, bắt đầu chúng ta cần những viên gạch tốt đã, nhưng những viên gạch đã không tốt thì kiến ​​trúc của tòa nhà không còn quan trọng nữa vì nó đã dễ dàng sụp đổ rồi. Một mặt khác, khi bạn có các viên gạch tốt rồi nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn từ những viên gạch tốt đó. Do đó Solid đến và giúp chúng ta xây dựng các kiến trúc tốt dựa trên các viên gạch tốt.&lt;/p&gt;
+&lt;p&gt;Nhìn chung Go khá là imperative cá nhân mình không thích style này. Tuy nhiên với cái nhìn của một Back End developer, mình thấy ở Go là một ngôn ngữ expressive, tối giản và hiệu quả cùng với tính năng concurrent built-in và khả năng tận dụng multi-core thì Go thực sự đáng được lựa chọn cho việc xây dựng các ứng dụng back end với hiệu xuất và concurrency cao. Go support tốt các paradim, flexible và dễ module hoá, dễ layered sẻ thực sự hữu ích cho việc dựng architecture. Cùng với đó, Go là một ngôn ngữ biên dịch, static type nhưng lại flexible như một ngôn ngữ thông dịch, dynamic type sẻ giúp nâng cao hiệu suất làm việc hơn. Còn đối với các bạn thì sao, nếu có cách nhìn nào khác thì giúp mình góp ý nhé.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="nodejs" /><category term="eventloop" /><category term="singlethreaded" /><summary type="html">Gần đây Golang nổi lên mạnh mẻ như một ngôi sao trong làng lập trình hệ thống với các lợi ích, chức năng cực kì powerful. Bài viết này mình sẻ lược qua một số điểm đáng chú ý sau của Golang, để các bạn có thể phần nào xem xét chọn Go cho dự án của mình nhé:</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Solid Principle</title><link href="https://romeo.vn/solid-principle/" rel="alternate" type="text/html" title="Solid Principle" /><published>2018-01-12T01:01:00-06:00</published><updated>2018-01-12T01:01:00-06:00</updated><id>https://romeo.vn/solid-principle</id><content type="html" xml:base="https://romeo.vn/solid-principle/">&lt;p&gt;Hệ thống phần mềm tốt phãi bắt đầu bằng clean code cũng giống như việc xây nhà, khi bắt đầu chúng ta cần những viên gạch tốt, nếu bắt đầu bởi những viên gạch không tốt thì cho dù kiến ​​trúc của tòa nhà ngon lành đến mấy cũng không còn quan trọng nữa vì nó đã dễ dàng sụp đổ. Một mặt khác, khi bạn đã có các viên gạch tốt, nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn. Ánh xạ sang Software Developmemnt, có một tập các nguyên tắc giúp chúng ta kết nối những viên gạch lại thành những bức tường, những component tốt. Một trong số đó là SOLID principle.&lt;/p&gt;
 
-&lt;p&gt;Nguyên tắc SOLID cho chúng ta biết cách sắp xếp các hàm, cấu trúc dữ liệu của chúng ta vào các lớp và kết nối chúng lại với nhau để xây dựng nên hệ thống. Việc sử dụng từ class không có nghĩa rằng các nguyên tắc này chỉ áp dụng cho phần mềm hướng đối tượng. Một class đơn giản là một nhóm các hàm và dữ liệu được ghép đôi. Mọi hệ thống phần mềm đều có các nhóm như vậy cho dù chúng có được gọi là các class hay không thì nguyên tắc SOLID vẫn sẻ áp dụng được cho các nhóm đó.&lt;/p&gt;
+&lt;p&gt;SOLID Principle cho chúng ta biết cách sắp xếp các hàm, cấu trúc dữ liệu vào các struct/class sao cho các struct/class đó dễ dàng tiếp nhận sự thay đổi, dễ hiểu cho người mới đồng thời dễ tái sử dụng khi cần.&lt;/p&gt;
 
-&lt;p&gt;Vậy mục tiêu của các nguyên tắc trong SOLID là gì? Là tạo ra các cấu trúc ở mức mid-level của phần mềm có các yêu cầu như dễ dàng tiếp nhận sự thay đổi, dễ hiểu cho người mới, dễ sử dụng lại. Từ mid-level đề cập đến thực tế là các nguyên tắc này được áp dụng bởi các lập trình viên làm việc ở cấp modules, SOLID được áp dụng ngay trên mức của code implement và giúp xác định các loại cấu trúc phần mềm được sử dụng trong các modules và các components.&lt;/p&gt;
+&lt;p&gt;Về cơ bản SOLID được Robert Martin giới thiệu với năm nguyên tắc thiết kế hướng đối tượng (OOD) sau:&lt;/p&gt;
 
-&lt;p&gt;Chỗ này hơi khó hiểu nhể, có thể tưởng tượng rằng một ngôi nhà nên được chia đầu tiên thành các components như các bức tường nhỏ, sau đó ghép nối lại thì SOLID được dùng ở mức các Engineer tạo nên các bức tường đó. Nói cách khác, khi muốn xây dựng kiến trúc tốt cho một ngôi nhà hay phần mềm chúng ta phãi thiết kế tốt từ từng bức tường, từng modules từng component để sao cho nó có thể dễ dàng tiếp nhận sự thay đổi, dễ dùng dễ hiểu cho người mới và hơn nữa là dễ dàng tái sử dụng module/component đó.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Single responsibility principle (S)&lt;/li&gt;
+  &lt;li&gt;Open/closed principle (O)&lt;/li&gt;
+  &lt;li&gt;Liskov substitution principle (L)&lt;/li&gt;
+  &lt;li&gt;Interface segregation principle (I)&lt;/li&gt;
+  &lt;li&gt;Dependency inversion principle (D)&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;SOLID&lt;/strong&gt; được &lt;strong&gt;Robert C. Martin&lt;/strong&gt; đưa ra với năm nguyên tắc thiết kế hướng đối tượng (OOD) sau:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;– Single responsibility principle (SRP)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;– Open/closed principle (O)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;– Liskov substitution principle (L)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;– Interface segregation principle (I)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;– Dependency inversion principle (D)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Chúng ta sẻ tiếp tục phân tích rõ từng nguyên tắc.&lt;/p&gt;
+&lt;p&gt;Bây giờ chúng ta sẻ tiếp tục phân tích rõ từng nguyên tắc xem chúng hữu ích như thế nào&lt;/p&gt;
 
 &lt;h3 id=&quot;1-the-single-responsibility-principlesrp&quot;&gt;1. The Single Responsibility Principle(SRP):&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;A class or function should only have one reason to change.&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Đây là nguyên tắc chúng ta thường hay vi phạm nhất. Có thể hiểu rằng chúng ta phãi viết code sao cho một struct/class chỉ nên đảm nhiệm một trách nhiệm duy nhất, một hệ thống phần mềm có cấu trúc tốt là hệ thống có các module/component mà chúng chỉ có một và chỉ một lý do để thay đổi.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The Single Responsibility Principle(SRP)&lt;/strong&gt;: Mỗi một class chỉ đảm nhiệm một trách nhiệm duy nhất,một hệ thống phần mềm có cấu trúc tốt là hệ thống có các module/component mà chúng chỉ có một và chỉ một lý do để thay đổi.
-Đọc đến đây chúng ta sẻ có thể dễ nhầm lẩn với một nguyên tắc khác đó là việc các hàm nên làm một và chỉ một việc duy nhất, đó là một nguyên tắc chúng ta thường sử dụng khi tái cấu trúc các hàm lớn thành các hàm nhỏ. Đó không phãi là SRP.&lt;/p&gt;
+&lt;p&gt;Để hiểu rõ nguyên tắc này chúng ta sẻ xét một ví dụ mà ta đã vi phạm nguyên tắc này:&lt;/p&gt;
 
-&lt;p&gt;Để hiểu rõ nguyên tắc này chúng ta sẻ xét một ví dụ mà ta đã vi phạm nguyên tắc này:
-Giả sử hệ thống quản lí tiền lương nhân viên của chúng ta có chứa 4 thực thể sau: Employee, CTO, CFO, COO. Class Employee của chúng ta sẻ có chứa ba phương thức sau:&lt;/p&gt;
+&lt;p&gt;Giả sử hệ thống quản lí tiền lương nhân viên của chúng ta có chứa 4 thực thể sau: Employee, CTO, CFO, COO. Class Employee của chúng ta sẻ có chứa ba phương thức sau:&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;caculatePay()&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;reportHours()&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;save()&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;Employee struct &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;Cách thiết kế class Employee của chúng ta đã vi phạm SRP bởi vì nó có ba phương thức chịu trách nhiệm với 3 thực thể rất khác nhau.&lt;/p&gt;
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;e &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;Employee&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; caculatePay&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;hr, accounting and it
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;e &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;Employee&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; reportHours&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;hr, accounting and it
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;e &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;Employee&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; save&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;hr, accounting and it
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cách thiết kế class Employee của chúng ta đã vi phạm SRP bởi vì nó có ba phương thức mà đáng ra phãi phãi chia cho 3 thực thể rất khác nhau đó là:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -888,33 +887,57 @@ Giả sử hệ thống quản lí tiền lương nhân viên của chúng ta c�
     &lt;p&gt;Phương thức reportHours() được gọi bởi phòng HR và báo cáo cho COO.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Phương thức save() được gọi bởi database admin và báo cáo cho CTO.&lt;/p&gt;
+    &lt;p&gt;Phương thức save() được gọi bởi phòng admin và báo cáo cho CTO.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Bằng việc đưa ba phương thức trên vào một class Employee đơn lẻ, chúng ta đã vô tình kết hợp sự phụ thuộc của các thực thể khác lại với nhau, ở đây có thể là CFO, COO, CTO đã vô tình phụ thuộc vào nhau. Lấy ví dụ như sau:&lt;/p&gt;
+&lt;p&gt;Bằng việc đưa ba phương thức trên vào một class Employee đơn lẻ, chúng ta đã vô tình couple sự phụ thuộc của các thực thể khác lại với nhau, ở đây có thể là CFO, COO, CTO đã vô tình phụ thuộc vào nhau. Lấy ví dụ như sau:&lt;/p&gt;
 
-&lt;p&gt;Giả xử rằng hàm &lt;strong&gt;caculatePay()&lt;/strong&gt; và hàm &lt;strong&gt;reportHours()&lt;/strong&gt; cần có giờ làm việc của từng nhân viên và chúng dùng chung một thuật toán để tính giờ làm việc, rõ ràng là khi đó chúng ta sẻ không muốn việc duplicate code xãy ra ở đây, chúng ta sẻ viết một hàm &lt;strong&gt;regularHours()&lt;/strong&gt; cho việc sử dụng của hai hàm &lt;strong&gt;caculatePay()&lt;/strong&gt; và &lt;strong&gt;reportHours()&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Giả xử rằng hàm caculatePay() và hàm reportHours() cần có giờ làm việc của từng nhân viên và chúng dùng chung một thuật toán để tính giờ làm việc, rõ ràng là khi đó chúng ta sẻ không muốn việc duplicate code xãy ra ở đây, chúng ta sẻ viết một hàm regularHours() cho việc sử dụng của hai hàm caculatePay() và reportHours().&lt;/p&gt;
 
-&lt;p&gt;Đến một ngày đẹp trời, nhóm CFO quyết định rằng việc tính toán giờ làm việc &lt;strong&gt;regularHours()&lt;/strong&gt; cần được tinh chỉnh lại trong lúc nhóm COO vẫn thấy hàm &lt;strong&gt;regularHours()&lt;/strong&gt; như thế là ổn rồi không muốn bất cứ thay đổi gì đối với nó nữa.&lt;/p&gt;
+&lt;p&gt;Đến một ngày đẹp trời, nhóm CFO quyết định rằng việc tính toán giờ làm việc regularHours() cần được tinh chỉnh lại trong lúc nhóm COO vẫn thấy hàm regularHours() như thế là ổn rồi không muốn bất cứ thay đổi gì đối với nó nữa.&lt;/p&gt;
 
-&lt;p&gt;Một developer được giao nhiệm vụ tinh chỉnh lại hàm &lt;strong&gt;regularHours()&lt;/strong&gt; theo một mục đích mới nào đó, anh ta làm việc nhưng đâu biết rằng hàm &lt;strong&gt;reportHours()&lt;/strong&gt; cũng gọi đến nó, việc tinh chỉnh được thực hiện xong, hàm &lt;strong&gt;caculatePay()&lt;/strong&gt; chạy trơn tru đúng yêu cầu và được áp dụng ngay. Sau một thời gian người ta nhận thấy hàm &lt;strong&gt;reportHours()&lt;/strong&gt; đã đi sai hướng, các số liệu báo cáo lên sai lệch ảnh hưởng đến tài chính công ty.&lt;/p&gt;
+&lt;p&gt;Một developer được CFO giao nhiệm vụ tinh chỉnh lại hàm regularHours() theo một mục đích mới nào đó, anh ta làm việc nhưng đâu biết rằng hàm reportHours() đang phụ thuộc nó. Việc tinh chỉnh được thực hiện xong, hàm caculatePay() chạy trơn tru đúng yêu cầu và được áp dụng ngay. Sau một thời gian người ta nhận thấy hàm reportHours() đã đi sai hướng, các số liệu báo cáo lên sai lệch ảnh hưởng đến tài chính công ty.&lt;/p&gt;
 
 &lt;p&gt;Đó là một ví dụ vi phạm, khi gặp các trường hợp đó chúng ta nên phân tách các phương thức ra các class riêng lẻ và ngược lại, cách dễ nhất để phá các ứng dụng là tạo ra các GOD classes(một GOD class là một class biết quá nhiều hoặc làm quá nhiều, GOD class là một ví dụ về một ví dụ về anti pattern), một God class giữ reference đến nhiều thực thể khác cũng như giữ nhiều trách nhiệm đâm ra dễ gây ra các vấn đề tương tự như ví dụ trên.&lt;/p&gt;
 
-&lt;h3 id=&quot;2-openclosed-principle-ocp&quot;&gt;2. Open/closed principle (OCP):&lt;/h3&gt;
+&lt;p&gt;Chúng ta sẻ refactor lại class trên như sau:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Theo nguyên lý này, mỗi khi ta muốn thêm chức năng cho chương trình, chúng ta nên viết class mới mở rộng từ class cũ ( bằng cách kế thừa hoặc sở hữu class cũ) không nên sửa đổi class cũ:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;Hr struct &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;Tất nhiên rồi phãi không nào, đây là lý do cơ bản nhất mà chúng ta nghiên cứu software architecture. Rõ ràng là nếu muốn mở rộng chức năng một cách đơn gỉan mà phãi thay đổi lớn đối với phần mềm thì các kiến ​​trúc sư của hệ thống phần mềm đó đã thất bại rồi.&lt;/p&gt;
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;h &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;Hr&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; reportHours&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;hr
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;Accountant struct &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;Accountant&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; caculatePay&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;accounting
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;type &lt;/span&gt;ITAdmin struct &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+func &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;ita &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;ITAdmin&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; save&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    // implement algorithm &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;it
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;2-openclosed-principle-ocp&quot;&gt;2. Open/Closed Principle (OCP):&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;A software artifact should be open for extension but closed for modification.”
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Nguyên tắc này có nghĩa là chúng ta phãi viết code sao cho mỗi khi ta muốn thêm chức năng cho chương trình, chúng ta có thể viết code mới chứ hạn chế tối đa việc sửa code củ.&lt;/p&gt;
+
+&lt;p&gt;Quá rõ ràng phãi không nào, đây là lý do cơ bản nhất mà chúng ta nghiên cứu Software Architecture. Rõ ràng là nếu muốn mở rộng, thay đổi một chức năng một cách đơn giản mà phãi thay đổi lớn đối với phần mềm thì các Architect của hệ thống phần mềm đó đã thất bại rồi.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/1.jpg&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Mục đích là thế nhưng làm thì như nào để đạt được mục đích nguyên tắc đó, chúng ta cùng xét một ví dụ như sau:&lt;/p&gt;
+&lt;p&gt;Mục đích là thế, nhưng phãi làm thì như nào để hiểu và đạt được mục đích nguyên tắc đó, chúng ta cùng xét một ví dụ như sau:&lt;/p&gt;
 
-&lt;p&gt;Giả xử hệ thống của bạn đang có một chức năng báo cáo tóm tắt tài chính, dữ liệu được hiển thị trên giao diện web và có thể cuộn cho bản tóm tắt dài. Rồi một ngày đẹp trời khách hàng muốn bạn thêm chức năng thể hiện báo cáo đó trên trên PDF với tiêu đề và phân trang hợp lí, các số liệu cần được làm nổi bật và gửi cho người dùng.&lt;/p&gt;
+&lt;p&gt;Giả xử hệ thống của bạn đang có một chức năng báo cáo tóm tắt tài chính, dữ liệu được hiển thị trên giao diện web, rõ ràng trên giao diện web thì cần gì phân trang, roll lên roll xuống là được rồi. Một ngày đẹp trời khách hàng muốn bạn thêm chức năng hiển thị báo cáo đó trên trên PDF với tiêu đề và phân trang hợp lí, các số liệu cần được làm nổi bật và gửi cho người dùng.&lt;/p&gt;
 
-&lt;p&gt;Rõ ràng, một lượng code sẻ phãi được viết lại để đáp ứng yêu cầu trên nhưng bao nhiêu code củ sẻ phãi thay đổi? Kiến trúc tốt sẻ giảm thiểu lượng code phãi thay đổi xuống mức tối thiểu nhất và lí tưởng nhất là không có dòng code nào phãi thay đổi.&lt;/p&gt;
+&lt;p&gt;Rõ ràng, một lượng code sẻ phãi được viết lại để đáp ứng yêu cầu trên nhưng bao nhiêu code củ sẻ phãi thay đổi? Kiến trúc tốt sẻ giảm thiểu lượng code phãi thay đổi xuống mức tối thiểu nhất có thể và lí tưởng nhất là không có dòng code nào phãi thay đổi.&lt;/p&gt;
 
 &lt;p&gt;Làm thế nào để đạt được điểu đó? Đầu tiên phãi tách biệt những thực thể mà chúng có thể phãi thay đổi vì các lí do khác nhau(áp dụng SRP) sau đó bố trí sự phụ thuộc của chúng đúng cách(sử dụng DIP nói sau). Bằng cách đó chúng ta sẻ đưa luồng dữ liệu hướng như dưới, mô tả một số quy trình kiểm tra xử lí dữ liệu có thể trình bày, sau đó trình bày theo định dạng phù hợp để thể hiện trên web và trên PDF.&lt;/p&gt;
 
@@ -922,71 +945,68 @@ Giả sử hệ thống quản lí tiền lương nhân viên của chúng ta c�
 
 &lt;p&gt;Sau khi thực hiện sự tách biệt này, chúng ta cần phải tổ chức các phụ thuộc code để đảm bảo rằng những thay đổi đối với một trong những trách nhiệm đó không gây ra những thay đổi ở bên kia. Ngoài ra, cách tổ chức mới phải đảm bảo rằng hành vi có thể được mở rộng mà không huỷ bỏ các sửa đổi.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/2.jpg&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Chúng ta thực hiện điều này bằng cách phân vùng các quy trình thành các class và tách các class đó thành các component, như được thể hiện bằng các dòng kép trong sơ đồ trong hình dưới.&lt;/p&gt;
 
 &lt;p&gt;Trong hình này, thành phần ở phía trên bên trái là Controller, phía trên bên phải là Interactor, phía dưới bên phải là database, ở phía dưới bên trái có bốn thành phần đại diện cho đối tượng hiển thị và data hiển thị.&lt;/p&gt;
 
-&lt;p&gt;Các  được đánh dấu bằng &lt;i&gt; là các interface; những người được đánh dấu bằng &lt;DS&gt; là các cấu trúc dữ liệu.&lt;/DS&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Các  được đánh dấu bằng kí hiệu chứ &amp;lt;I là các interface; những người được đánh dấu bằng &amp;lt;DS là các data struct.&lt;/p&gt;
 
 &lt;p&gt;Các mũi tên đang sử dụng để thể hiện các mối quan hệ. Đầu mũi tên trỏ tới thể hiện mối quan hệ thừa kế. Điều đầu tiên cần lưu ý là tất cả các phụ thuộc là các phụ thuộc code. Một mũi tên chỉ từ class A đến class B có nghĩa là code của lớp A reference đế class B, nhưng class B không cần biết gì đến class A.&lt;/p&gt;
 
 &lt;p&gt;Như vậy, trong hình trên, FinancialDataMapper reference đến FinancialDataGateway thông qua một mối quan hệ implement interface, nhưng FinancialGateway không biết gì về FinancialDataMapper.
-&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/3.jpg&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Điều tiếp theo cần lưu ý là tất cả mỗi quan hệ đều là một chiều và mỗi đối tượng chỉ chịu sự phụ thuộc đến duy nhất một thực thể khác như thể hiện trong hình dưới, những mũi tên hướng tới các thành phần mà chúng ta muốn bảo vệ khỏi thay đổi.&lt;/p&gt;
 
 &lt;p&gt;Nghĩa là sao? là nếu thành phần A cần được bảo vệ khỏi những thay đổi trong thành phần B, thì thành phần B sẽ phụ thuộc vào thành phần A. Chúng ta muốn bảo vệ Controller khỏi những thay đổi trong Presenters. Chúng ta muốn bảo vệ các Presenters khỏi những thay đổi trong Views. Chúng tôi muốn bảo vệ Interactor khỏi những thay đổi trong bất cứ điều gì. Interactor ở vị trí phù hợp nhất với OCP.&lt;/p&gt;
 
-&lt;p&gt;Các thay đổi đối với Database hoặc Controller hoặc Presenters hoặc Views sẽ không ảnh hưởng đến Interactor.
-Tại sao Interactor nên giữ một vị thế đặc quyền như vậy? Bởi vì nó chứa các business rule. Interactor chứa các chính sách cao nhất của ứng dụng. Tất cả các thành phần khác đang xử lý các mối quan tâm ngoại vi còn interactor giao dịch với mối quan tâm trung tâm. Mặc dù Controller là ngoại vi với Interactor, nhưng nó vẫn là trung tâm của các Presenters và Views. Và trong khi các diễn giả có thể là ngoại vi với Controller nhưng chúng là trung tâm của Views.&lt;/p&gt;
+&lt;p&gt;Các thay đổi đối với Database/Controller/Presenters/Views sẽ không ảnh hưởng đến Interactor.&lt;/p&gt;
 
-&lt;p&gt;Lưu ý cách thức này tạo ra một hệ thống phân cấp bảo vệ dựa trên khái niệm “level”. Các tác nhân tương tác là khái niệm mức cao nhất, vì vậy chúng được bảo vệ nhất. View nằm trong số các khái niệm cấp thấp nhất, vì vậy chúng được bảo vệ ít nhất. Presenters có cấp độ cao hơn Views nhưng cấp thấp hơn Controller hoặc Interactor.&lt;/p&gt;
+&lt;p&gt;Tại sao Interactor nên giữ một vị thế đặc quyền như vậy? Bởi vì nó chứa các business rule. Interactor chứa các policy cao nhất của ứng dụng. Tất cả các thành phần khác đang xử lý các yếu tố ngoại vi còn interactor thực hiện các logic quan trọng nhất của ứng dụng. Mặc dù Controller là thành phần phụ so với với Interactor, nhưng nó vẫn là thành phần quan trọng hơn các Presenters và Views. Và trong Presenters có thể là phần phụ so với Controller nhưng chúng lại quan trọng hơn phần Views.&lt;/p&gt;
+
+&lt;p&gt;Lưu ý cách thức này tạo ra một hệ thống phân cấp dựa trên khái niệm “level”. Các Interactor ưu tiên cao nhất vì vậy chúng cần được được bảo vệ nhất. View nằm trong số ưu tiên thấp nhất, vì vậy chúng được bảo vệ ít nhất.&lt;/p&gt;
 
 &lt;p&gt;Đây là cách OCP hoạt động ở cấp kiến ​​trúc. Các kiến trúc chia chức năng riêng biệt dựa trên cách thức – tại sao và khi nào chúng thay đổi, sau đó tổ chức chức năng được phân tách thành một hệ thống phân cấp các thành phần. Các thành phần cấp cao hơn trong phân cấp đó được bảo vệ khỏi những thay đổi được thực hiện cho các thành phần cấp thấp hơn.&lt;/p&gt;
 
-&lt;p&gt;Nói tóm lại OCP là một trong nhưng sức mạnh đứng đằng sau kiến trúc hệ thống tốt, giúp hệ thống dễ dàng mở rộng mà không phãi chịu sức ép từ những thay đổi trong mã nguồn, mục tiêu này đạt được khi chúng ta chia phân vùng hệ thống thành các component và sắp xếp chúng thành một hệ thống phân cấp sự phụ thuộc để bảo vệ các thành phần cấp cao khỏi sự thay đổi của các thành phần cấp thấp.&lt;/p&gt;
+&lt;p&gt;Nói tóm lại OCP là một trong nhưng sức mạnh đứng đằng sau kiến trúc hệ thống tốt, giúp hệ thống dễ dàng mở rộng mà không phãi chịu sức ép từ những thay đổi, mục tiêu này đạt được khi chúng ta chia phân vùng hệ thống thành các component và sắp xếp chúng thành một hệ thống phân cấp sự phụ thuộc để bảo vệ các thành phần cấp cao khỏi sự thay đổi của các thành phần cấp thấp.&lt;/p&gt;
 
 &lt;h3 id=&quot;3-liskov-substitution-principlelsp&quot;&gt;3. Liskov Substitution Principle(LSP):&lt;/h3&gt;
 
 &lt;p&gt;Nguyên tắc này được phát biểu như sau:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Trong một chương trình, các object của class con có thể thay thế class cha mà không làm thay đổi tính đúng đắn của chương trình&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Trong một chương trình, các object của class con có thể thay thế class cha mà không làm thay đổi tính đúng đắn của chương trình
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Không hiểu đúng không nào? Có thể nghĩ như này: Khi các class A kế thừa từ class B thì phãi có hai điều kiện sau:&lt;/p&gt;
+&lt;p&gt;Thật khó hiểu đúng không nào? Có thể nghĩ như này: Khi các class A kế thừa từ class B thì phãi có hai điều kiện sau:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Class B có các behaviors nào thì A phãi có các behaviors đó.&lt;/li&gt;
+  &lt;li&gt;Các phương thức của class B thì phãi đảm bảo có thể sử được trong các class con của nó(ở đây là class A) hay nói cách khác các phương thức của các class cha phãi luôn hoạt động chính xác trên tất cả các class kế thừa từ nó.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;– Class B có các behaviors nào thì A phãi có các behaviors đó.&lt;/p&gt;
+&lt;p&gt;Để hiểu hơn ta xét ví dụ như sau: Giả xử ta có class Chim có phương thức là Bay()&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Class Đại Bàng thừa kế class Chim cũng có đủ phương thức Bay() và hoạt động đúng như class chim() do đó trường hợp này thoả mãn LSP.&lt;/li&gt;
+  &lt;li&gt;Class Chim Cánh cụt thừa kế class Chim nhưng phương thức Bay không khả dụng cho nên là vi phạm LSP.&lt;/li&gt;
+  &lt;li&gt;Class Chim Điện thừa kế class Chim cũng có phương thức bay, nhưng phương thức Bay này có thêm yêu cầu là phãi có điện thì mới bay được cho nên vi phạm LSP.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;– Các phương thức của class cơ sở thì phãi đảm bảo có thể sử được trong các class con của nó hay nói cách khác các phương thức của các class cha phãi luôn hoạt động được và chính xác trên tất cả các class kế thừa từ nó.&lt;/p&gt;
+&lt;h3 id=&quot;4-interface-segregation-principleisp&quot;&gt;4. Interface Segregation Principle(ISP):&lt;/h3&gt;
 
-&lt;p&gt;Để hiểu hơn ta xét ví dụ như sau:&lt;/p&gt;
-
-&lt;p&gt;Giả xử ta có class Chim có phương thức là Bay()&lt;/p&gt;
-
-&lt;p&gt;– Class Đại Bàng thừa kế class Chim cũng có đủ phương thức Bay() và hoạt động đúng như class chim() trường hợp này thoả mãn LSP.&lt;/p&gt;
-
-&lt;p&gt;– Class Chim Cánh cụt thừa kế class Chim nhưng phương thức Bay không khả dụng cho nên là vi phạm LSP.&lt;/p&gt;
-
-&lt;p&gt;– Class Chim Điện thừa kế class Chim cũng có phương thức bay, nhưng phương thức Bay này có thêm yêu cầu là phãi có điện thì mới bay được cho nên vi phạm LSP.&lt;/p&gt;
-
-&lt;p&gt;LSP cần được mở rộng đến mức kiến trúc. Một sự vi phạm đơn giản về khả năng thay thế, có thể làm cho kiến trúc của hệ thống bị ô nhiễm với một số lượng đáng kể các cơ chế bổ sung.&lt;/p&gt;
-
-&lt;h3 id=&quot;4-interface-segregation-principleisp&quot;&gt;4. Interface segregation principle(ISP):&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/4.jpg&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nguyên tắc này có thể nói ngắn gọn là thay vì dùng 1 interface lớn, ta nên tách thành nhiều interface nhỏ, với nhiều mục đích cụ thể, để dễ hiểu hơn chúng ta cùng xét ví dụ như hình trên, mỗi user sử dụng các phương thức của class OPS, giả sử rằng User1 chỉ sử dụng op1, User2 chỉ sử dụng op2, User3 chỉ sử dụng op3.&lt;/p&gt;
 
-&lt;p&gt;Khi đó User1 vô tình phụ thuộc vào op2 và op3 mặc dù nó không gọi chúng, sự phụ thuộc này khiến cho User1 phãi được implement lại khi op2 và op3 bị thay đổi mặc dù nó không dùng hai hàm đó, hơn thế nữa việc gom quá nhiều phương thức vào một đối tượng khiến cho chúng ta nhọc nhằng trong việc implement cho nên chúng ta nên giải quyết bằng cách tách biệt các phương thức thành các interface nhỏ như hình bên dưới.&lt;/p&gt;
+&lt;p&gt;Khi đó User1 vô tình phụ thuộc vào op2 và op3 mặc dù nó không gọi chúng, sự phụ thuộc này khiến cho User1 phãi được implement lại khi op2 và op3 bị thay đổi mặc dù nó không dùng hai hàm đó, hơn thế nữa việc gom quá nhiều phương thức vào một đối tượng khiến cho chúng ta nhập nhằng trong việc implement cho nên chúng ta nên giải quyết bằng cách tách biệt các phương thức thành các interface nhỏ như hình bên dưới.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/5.jpg&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2017-12-12-solid-principle/5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Nếu vấn đề này được triển khai trên ngôn ngữ tỉnh như Golang thì code của User1 sẻ phụ thuộc vào U1Ops và op1 nhưng sẻ không phụ thuộc vào OPS do đó khi có thay đổi đối với OPS mà User1 không quan tâm sẻ không làm cho User1 bị biên dịch lại và triển khai lại.&lt;/p&gt;
 
 &lt;h3 id=&quot;5-dependency-inversion-principledip&quot;&gt;5. DEPENDENCY INVERSION PRINCIPLE(DIP):&lt;/h3&gt;
 
-&lt;p&gt;Nguyên tắc này cho chúng ta biết rằng các hệ thống linh hoạt nhất là các hệ thống phụ thuộc vào mã nguồn chỉ tham chiếu đến trừu tượng hóa, chứ không chỉ các concretions.&lt;/p&gt;
+&lt;p&gt;Nguyên tắc này cho chúng ta biết rằng các hệ thống linh hoạt nhất là các hệ thống phụ thuộc vào mã nguồn chỉ tham chiếu đến trừu tượng hóa, chứ không phụ thuộc đến các implementation.&lt;/p&gt;
 
 &lt;p&gt;Hãy tưởng tượng phần mềm của chúng ta sẻ như thế nào trước khi có một cơ chế an toàn và thuận tiện cho đa hình, luồng đi của phần mềm này sẻ như cây mô tả bên dưới, các hàm main được gọi là các hàm level cao chúng gọi các hàm level trung bình và các hàm level trung bình gọi các hàm ở level thấp. Tuy nhiên có thể thấy rằng trong cây đó các phụ thuộc code không đi theo hướng của luồng gọi.&lt;/p&gt;
 
@@ -1006,7 +1026,7 @@ Tại sao Interactor nên giữ một vị thế đặc quyền như vậy? Bở
 
 &lt;p&gt;Điều này có nghĩa là gì? Là giao diện người dùng và cơ sở dữ liệu có thể được implement để bổ sung cho thể hiện các business logic, mã nguồn của business logic không bao giờ cần biết đến giao diện người dùng hoặc cơ sở dữ liệu. Kết quả là, các business logic cũng như giao diện người dùng và cơ sở dữ liệu có thể được biên dịch thành ba thành phần hoặc đơn vị triển khai riêng biệt và thành phần chứa business logic sẽ không phụ thuộc vào các thành phần có chứa giao diện người dùng và cơ sở dữ liệu, các thay đổi đối với giao diện người dùng hoặc cơ sở dữ liệu không có bất kỳ ảnh hưởng nào đến business logic. Tóm lại, khi mã nguồn trong một thành phần thay đổi thì chỉ thành phần đó cần phải được triển khai lại. Đây là khả năng triển khai độc lập, nếu các module trong hệ thống của bạn có thể được triển khai độc lập, thì chúng có thể được phát triển độc lập bởi các nhóm khác nhau.&lt;/p&gt;
 
-&lt;p&gt;Qua việc tìm hiểu nguyên tắc này chúng ta cũng có thể thấy được sức mạnh của OOP đặc biệt là tính đa hình, thông qua việc sử dụng đa hình chúng ta có thể giành quyền kiểm soát tuyệt đối đối với mọi phụ thuộc mã nguồn trong hệ thống.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><summary type="html">Hệ thống phần mềm tốt phãi bắt đầu bằng code sạch. Cũng giống như việc xây nhà, bắt đầu chúng ta cần những viên gạch tốt đã, nhưng những viên gạch đã không tốt thì kiến ​​trúc của tòa nhà không còn quan trọng nữa vì nó đã dễ dàng sụp đổ rồi. Một mặt khác, khi bạn có các viên gạch tốt rồi nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn từ những viên gạch tốt đó. Do đó Solid đến và giúp chúng ta xây dựng các kiến trúc tốt dựa trên các viên gạch tốt.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Hiểu Về Call Stack - Heap - Queue</title><link href="https://romeo.vn/hieu-ve-call-stack-heap-queue/" rel="alternate" type="text/html" title="Hiểu Về Call Stack - Heap - Queue" /><published>2017-08-14T12:45:00-05:00</published><updated>2017-08-14T12:45:00-05:00</updated><id>https://romeo.vn/hieu-ve-call-stack-heap-queue</id><content type="html" xml:base="https://romeo.vn/hieu-ve-call-stack-heap-queue/">&lt;h2 id=&quot;1-stack&quot;&gt;1. Stack:&lt;/h2&gt;
+&lt;p&gt;Qua việc tìm hiểu nguyên tắc này chúng ta cũng có thể thấy được sức mạnh của OOP đặc biệt là tính đa hình, thông qua việc sử dụng đa hình chúng ta có thể giành quyền kiểm soát tuyệt đối đối với mọi phụ thuộc mã nguồn trong hệ thống.&lt;/p&gt;</content><author><name>Le Phuoc My</name></author><category term="blog" /><category term="solid" /><category term="ood" /><category term="oop" /><summary type="html">Hệ thống phần mềm tốt phãi bắt đầu bằng clean code cũng giống như việc xây nhà, khi bắt đầu chúng ta cần những viên gạch tốt, nếu bắt đầu bởi những viên gạch không tốt thì cho dù kiến ​​trúc của tòa nhà ngon lành đến mấy cũng không còn quan trọng nữa vì nó đã dễ dàng sụp đổ. Một mặt khác, khi bạn đã có các viên gạch tốt, nhưng đôi lúc từ chúng bạn vẫn tạo ra một mớ hổn độn. Ánh xạ sang Software Developmemnt, có một tập các nguyên tắc giúp chúng ta kết nối những viên gạch lại thành những bức tường, những component tốt. Một trong số đó là SOLID principle.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://romeo.vn/assets/images/" /></entry><entry><title type="html">Hiểu Về Call Stack - Heap - Queue</title><link href="https://romeo.vn/hieu-ve-call-stack-heap-queue/" rel="alternate" type="text/html" title="Hiểu Về Call Stack - Heap - Queue" /><published>2017-08-14T12:45:00-05:00</published><updated>2017-08-14T12:45:00-05:00</updated><id>https://romeo.vn/hieu-ve-call-stack-heap-queue</id><content type="html" xml:base="https://romeo.vn/hieu-ve-call-stack-heap-queue/">&lt;h2 id=&quot;1-stack&quot;&gt;1. Stack:&lt;/h2&gt;
 
 &lt;p&gt;Ứng với mỗi thread (hoặc 1 goruntine đối với Golang) của chương trình thường có một call stack. Khi ứng dụng bắt đầu được thực thi, các biến cục bộ, địa chỉ hàm, biến tham chiếu đối tượng….sẻ được lưu trữ trong Stack, tùy theo thứ tự gọi mà các thành phần đẩy vào stack được sắp xếp theo đúng thứ tự.
 Khi 1 phương thức kết thúc cũng là lúc các giá trị biến và các tham chiếu đối tương được hủy bỏ — và địa chỉ hàm cũng được hủy bỏ ngay sau đó. Stack lưu trữ dung lượng thấp hơn rất nhiều so với heap.&lt;/p&gt;

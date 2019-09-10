@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-09T08:49:51-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://romeo.vn/feed.xml" rel="self" type="application/atom+xml" /><link href="https://romeo.vn/" rel="alternate" type="text/html" /><updated>2019-09-10T02:40:13-05:00</updated><id>https://romeo.vn/feed.xml</id><title type="html">Le Phuoc My</title><subtitle>A blog about technology and stuff related</subtitle><entry><title type="html">Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps</title><link href="https://romeo.vn/xam-xi-ve-ddd-part2-2/" rel="alternate" type="text/html" title="Xàm xí về Domain Driven Design - Part 4: Strategic Design - Context Maps" /><published>2019-07-17T20:12:00-05:00</published><updated>2019-07-17T20:12:00-05:00</updated><id>https://romeo.vn/xam-xi-ve-ddd-part2-2</id><content type="html" xml:base="https://romeo.vn/xam-xi-ve-ddd-part2-2/">&lt;p&gt;Bài trước chúng ta đã thảo luận về một số khái niệm về Domain, SubDomain, BoundedContext….và phần nào hiểu được cách xác định chúng trong dự án của mình. Chúng ta đã biết Domain của chúng ta là gì, cần phãi giải quyết các SubDomain nào, ứng với các SubDomain sẻ có những Bounded Contexts nào. Vậy các Contexts đó có các quan hệ ra sao? Chúng ta sẻ tổ chức tích hợp chúng như thế nào?&lt;/p&gt;
 
-&lt;p&gt;Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
+&lt;p&gt;Trong bài viết này chúng ta cùng thảo luận về quan hệ và cách tổ chức và tích hợp các các Bounded Context, chúng ta sẻ cùng nhau trả lời một số câu hỏi quan trọng tồn tại trong quá trình phân tích dự án như sau:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Có những mối quan hệ nào giữa các Bounded Contexts?&lt;/li&gt;
-  &lt;li&gt;Làm thế nào để các Bounded Context phối hợp với nhau?&lt;/li&gt;
-  &lt;li&gt;Làm thế nào để Downstream Context đối phó với những thay đổi xãy ra ở Upstream Context? Làm thế nào để các Upstream Context không gây rắc rối cho các Downstream Context?&lt;/li&gt;
-  &lt;li&gt;Làm thế nào để tổ chức ánh xạ ngữ nghĩa các Domain Model giữa các Bounded Context cũng như làm thế nào để translate các thuật ngữ trong Ubiquitous Language sang các ngôn ngữ khác.&lt;/li&gt;
-  &lt;li&gt;Các Principles trong việc tổ chức integrate các Bounded Context là gì?&lt;/li&gt;
+  &lt;li&gt;Các Bounded Context có liên quan đến nhau như thế nào?&lt;/li&gt;
+  &lt;li&gt;Tổ chức các Bounded Context như nào để chúng dễ dàng phối hợp với nhau?&lt;/li&gt;
+  &lt;li&gt;Làm thế nào để bảo vệ các Downstream Context khỏi những thay đổi xãy ra ở Upstream Context? Hay nói cách khác làm thế nào để các Upstream Context không gây rắc rối cho các Downstream Context?&lt;/li&gt;
+  &lt;li&gt;Làm thế nào để tổ chức ánh xạ ngữ nghĩa các Domain Model giữa các Bounded Context? Cũng như làm thế nào để translate các thuật ngữ trong Ubiquitous Language sang các ngôn ngữ khác?&lt;/li&gt;
+  &lt;li&gt;Các Principles, Parterns trong việc tổ chức integrate các Bounded Context là gì?&lt;/li&gt;
   &lt;li&gt;Những giá trị lớn lao khi tổ chức, xây dựng tốt các Context Maps(Integrate chúng một cách dễ dàng, tính cohesion cao mà lại low coupling, dễ duy trì, mở rộng, tạo nguổn dữ liệu real time cho việc mining, phân tích,…)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -14,50 +14,70 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Bây giờ chúng ta cùng tìm hiểu vì sao lại có hình minh hoạ trên.&lt;/p&gt;
+&lt;h3 id=&quot;a-các-bounded-context-có-liên-quan-đến-nhau-như-thế-nào&quot;&gt;A. Các Bounded Context có liên quan đến nhau như thế nào?&lt;/h3&gt;
+&lt;p&gt;Trong các hệ thống lớn và phức tạp, rất ít các Bounded Context thật sự tách biệt một cách hoàn toàn. Đa số các Bounded Context sẽ có một hoặc nhiều mối quan hệ với các Bounded Context khác.&lt;/p&gt;
 
-&lt;h3 id=&quot;1-mối-quan-hệ-giữa-các-bounded-context&quot;&gt;1. Mối quan hệ giữa các Bounded Context:&lt;/h3&gt;
-&lt;p&gt;Trong các hệ thống lớn và phức tạp, rất ít các Bounded Context tách biệt một cách hoàn toàn. Đa số Bounded Context sẽ có một hoặc nhiều mối quan hệ với các Bounded Context khác. Việc xác định các mối quan hệ này có tầm quan trọng không chỉ về mặt kỹ thuật(quyết định các sub-system giao tiếp phối hợp với nhau như thế nào) mà còn quyết định cả cách chúng được phát triển(các team sẽ phối hợp với nhau ra sao).&lt;/p&gt;
+&lt;p&gt;Việc xác định các mối quan hệ này có tầm quan trọng không chỉ về mặt kỹ thuật(quyết định các sub-system giao tiếp phối hợp với nhau như thế nào) mà còn quyết định cả cách chúng được phát triển(các team sẽ phối hợp với nhau ra sao).&lt;/p&gt;
 
-&lt;p&gt;Cách phổ biến nhất để xác định mối quan hệ giữa các Bounded Context là phân loại các Bounded Context thành các Upstream và Downstream Contexts. Tương tự như hình tượng các thành phố được đặt bên một dòng sông, các thành phố ở thượng nguồn(Upstream) sẻ đổ những gì muốn truyền cho các thành phố ở hạ lưu(Downstream) xuống sông, những thứ đó sẻ được đưa đến các thành phố ở hạ lưu và họ chỉ cần vớt lên từ dưới sông.&lt;/p&gt;
+&lt;p&gt;Cách phổ biến nhất để xác định mối quan hệ giữa các Bounded Context là phân loại các Bounded Context thành các Upstream và Downstream Contexts. Để dễ hình dung thì hãy tưởng tượng các Bounded Context như các thành phố đặt bên cạnh một dòng sông. Các thành phố ở thượng nguồn (Upstream) sẻ đổ những gì muốn truyền cho các thành phố ở hạ lưu(Downstream) xuống sông, những thứ đó sẻ được đưa đến các thành phố ở hạ lưu và họ chỉ cần vớt lên từ dưới sông.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Rõ ràng các Context đôi lúc có thể vừa được coi là Upstream Context lẫn Downstream Context tuỳ vào vị trí của chúng.&lt;/p&gt;
 
-&lt;p&gt;Tuy nhiên việc chia thành các Upstream và Downstream contexts sẻ có ưu và nhược điểm riêng của nó. Một Upstream Context sẻ không phụ thuộc vào bất kỳ Context nào khác, nó sẻ tự do phát triển theo bất kỳ hướng nào. Tuy nhiên, hệ quả của bất kỳ thay đổi nào ở Upstream Context cũng có thể gây ảnh hưởng nghiêm trọng đối với các Downstream Context. Một Downstream Context bị hạn chế bởi sự phụ thuộc của nó vào Upstream Context nhưng lại không phãi quá lo lắng vì những thay đổi của nó sẻ gây ảnh hướng cho các Downstream Context, điều này giúp các nhà developer tại Downstream Context sẻ tự do hơn các developer tại Upstream Context muốn làm gì cũng phãi nhìn trước ngó sau.&lt;/p&gt;
+&lt;p&gt;Tuy nhiên việc chia thành các Upstream và Downstream contexts sẻ cho chúng ta một số ưu và nhược điểm. Rõ ràng một Upstream Context sẻ không phụ thuộc vào bất kỳ Downstream Context nào, nó sẻ tự do phát triển theo bất kỳ hướng nào. Tuy nhiên, bất kỳ thay đổi nào ở Upstream Context cũng có thể gây ảnh hưởng nghiêm trọng đối với các Downstream Context.&lt;/p&gt;
+
+&lt;p&gt;Cùng với đó thì một Downstream Context bị hạn chế bởi sự phụ thuộc của nó vào Upstream Context nhưng lại không phãi lo lắng vì những thay đổi của nó sẻ gây ảnh hướng cho các Downstream Context khác hay không, điều này giúp các nhà Developer tại Downstream Context sẻ tự do hơn các Developer tại Upstream Context muốn làm gì cũng phãi nhìn trước ngó sau.&lt;/p&gt;
 
 &lt;p&gt;Chúng ta có thể hình dung các mối quan hệ giữa các Context một cách trực quan như hình dưới.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Ok, chúng ta đã quyết định rằng các Context về cơ bản sẻ có mối quan hệ như trên, vậy chúng ta sẻ tổ chức giao tiếp phối hợp giữa chúng như thế nào? Có các mẫu integrate nào giữa chúng?&lt;/p&gt;
+&lt;p&gt;Ok, chúng ta đã quyết định rằng các Context về cơ bản sẻ có mối quan hệ như trên, vậy sẻ phãi tổ chức chúng như thế nào? Tổ chức ở đây đôi lúc vừa là tổ chức cơ cấu team lẫn tổ chức các module code.&lt;/p&gt;
 
-&lt;p&gt;Chúng ta cùng tham khảo các integrate parterns mà Evans đã giới thiệu.&lt;/p&gt;
-&lt;h3 id=&quot;2-integration-patterns&quot;&gt;2. Integration Patterns:&lt;/h3&gt;
-&lt;h4 id=&quot;partnership&quot;&gt;Partnership:&lt;/h4&gt;
-&lt;p&gt;Hai Contexts có quan hệ partnership thì cả hai team thuộc hai contexts này phãi phối hợp chặc chẻ với nhau. Các interfaces, contracts, features giữa hai bên hay bất cứ thứ gì cần cho việc develop hai context này cần được plan và lên lịch chính xác nhằm tối thiểu hoá các ảnh hưởng xấu đến quá trình phát triển của chúng. Mỗi một sai lầm nào trong quá trình planning và scheduling đều có thể gây ra deadlock/bottleneck trong quản lí, ảnh hưởng đến việc delivery các modules tính năng.&lt;/p&gt;
+&lt;p&gt;DDD cung cấp cho chúng ta các integration partern nhằm giúp tổ chức đúng đắn và logic hơn. Thực ra nếu không có DDD chúng ta cũng hoàn toàn có thể nghĩ đến và áp dụng những cách tổ chức, những integration partern mà DDD suggest. Các dự án mình tham gia điều tổ chức chức theo những ý tưởng đó.
+Tuy nhiên chúng ta cùng ngó lại xem có gì hay ho không nào.&lt;/p&gt;
 
-&lt;h4 id=&quot;shared-kernel&quot;&gt;Shared Kernel:&lt;/h4&gt;
+&lt;h3 id=&quot;b-integration-patterns&quot;&gt;B. Integration Patterns:&lt;/h3&gt;
+&lt;h4 id=&quot;1-partnership&quot;&gt;1. Partnership:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hai Contexts có quan hệ partnership thì cả hai team thuộc hai contexts này phãi phối hợp chặc chẻ với nhau. Các interfaces, contracts, features giữa hai bên hay bất cứ thứ gì cần cho việc develop hai context này cần được plan và lên lịch một cách chính xác nhằm tối thiểu hoá các ảnh hưởng xấu đến quá trình phát triển chung. Mỗi một sai lầm nào trong quá trình planning và scheduling đều có thể gây ra deadlock/bottleneck trong quản lí, ảnh hưởng đến việc delivery các modules tính năng.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-shared-kernel&quot;&gt;2. Shared Kernel:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Khi hai hay nhiều Contexts cùng dùng chung/chia sẻ nhau các thông tin như code base, service, model,…. chúng ta gọi đó là các thành phần Shared Kernel. Các Shared Kernel có thể bị thay đổi bởi bất cứ team nào với sự nhất trí của các bên nhằm đảm bảo không gây ảnh hưởng đến context nào đang dùng Shared Kernel này. Vì tính chất đó của share kernel code, để đảm bảo không có sai xót ảnh hưởng nào chúng ta cần phãi cover code bằng automation test.&lt;/p&gt;
 
-&lt;h4 id=&quot;customer-supplier&quot;&gt;Customer-Supplier:&lt;/h4&gt;
+&lt;h4 id=&quot;3-customer-supplier&quot;&gt;3. Customer-Supplier:&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Khi hai team có mối quan hệ Upstream-Downstream, trong đó team ở Upstream có thể phát triển mà không phụ thuộc vào team ở Downstream. Trong lúc đó team ở Downstream đôi lúc phãi phụ thuộc vào Downstream context. Do đó các yêu cầu từ Downstream Context cần được xem như là các yêu cầu business và chuyển cho quá trình planning ở Upstream team.&lt;/p&gt;
 
-&lt;h4 id=&quot;conformist&quot;&gt;Conformist&lt;/h4&gt;
+&lt;h4 id=&quot;4-conformist&quot;&gt;4. Conformist&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Các Bounded Context thường có mối quan hệ Upstream-Downstream. Tuy nhiên, team ở Upstream Context không có motivation để đáp ứng nhu cầu của team ở Downstream Context. Team ở Downstream Context phãi tuân thủ model của team Upstream Context bất kể điều gì xảy ra.&lt;/p&gt;
 
-&lt;h4 id=&quot;anticorruption-layer&quot;&gt;Anticorruption Layer&lt;/h4&gt;
+&lt;h4 id=&quot;5-anticorruption-layer&quot;&gt;5. Anticorruption Layer&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Các Bounded Context thường có quan hệ Upstream-Downstream với nhau và team ở Upstream thườn không care đến nhu cầu của Team ở Downstream Context. Tuy nhiên, thay vì tuân thủ model hay bất cứ gì mà team ở Upstream Context define ra, team ở Downstream cần tạo ra một lớp trừu tượng nhằm bảo vệ logic trong Context này khỏi những thay đổi trong Upstream Context. Anticorruption Layer này cho phép các thành viên trong team có thể làm việc với một Domain Model ứng với Context của họ, trong khi vẫn tích hợp với Upstream Context. Khi Upstream Context thay đổi, Anticorruption Layer cũng phải thay đổi, nhưng về Domain Model, Business Logic của Downstream Context có thể không thay đổi.&lt;/p&gt;
 
-&lt;h4 id=&quot;open-host-service&quot;&gt;Open Host Service:&lt;/h4&gt;
+&lt;h4 id=&quot;6-open-host-service&quot;&gt;6. Open Host Service:&lt;/h4&gt;
 &lt;p&gt;Một Bounded Context có thể mở một hoặc nhiều protocol(có thể là Rest/gRPC hay cả message bus) để bất kì Bounded Context khác muốn tích hợp/sử dụng service của nó đều có thể access thông qua các protocol này, chúng được hiểu là Open Host Service.&lt;/p&gt;
 
-&lt;h4 id=&quot;published-language&quot;&gt;Published Language:&lt;/h4&gt;
+&lt;h4 id=&quot;7-published-language&quot;&gt;7. Published Language:&lt;/h4&gt;
 &lt;p&gt;Việc translate ngữ nghĩa giữa các model của hai hoặc nhiều Bounded Context đòi hỏi giữa chúng phãi có một ngôn ngữ chung. Các Bounded Context sẻ phãi đồng thuận với nhau trên một ngôn ngữ chung ví dụ như các XML schema, UML, DSL,…dựa vào các language đó các Bounded Context có thể tương tác với nhau một cách chính xác hiệu quả. Các language đó gọi là Published Language. Với tính chất được chia sẻ giữa các Bounded Context, Published Language gần giống với Open Host Service và thường được sử dụng đi kèm với Open Host Service.&lt;/p&gt;
 
-&lt;h4 id=&quot;separate-ways&quot;&gt;Separate Ways:&lt;/h4&gt;
+&lt;h4 id=&quot;8-separate-ways&quot;&gt;8. Separate Ways:&lt;/h4&gt;
 &lt;p&gt;Chúng ta phải cứng rắn hơn và đôi lúc phãi tàn nhẫn hơn khi define các requirements. Nếu hai bộ chức năng không có mối quan hệ đáng kể thì chúng phãi được tổ chức tách biệt hoàn toàn. Integration luôn luôn có một cái giá rất đắt cho việc coupling trong lúc đôi khi chỉ mang lại một lợi ích nhỏ. Việc define, phân tách hoàn toàn các Bounded Context làm cho chúng không dính với các Bounded Context khác do đó cho phép Developers phát triển một cách đơn giản hơn, chuyên biệt hơn trong phạm vi nhỏ, dễ dàng optimize hơn và đở rối rắm hơn.&lt;/p&gt;
+
+&lt;h4 id=&quot;vậy-chúng-sẻ-phối-hợp-hoạt-động-như-thế-nào&quot;&gt;Vậy chúng sẻ phối hợp hoạt động như thế nào?&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20-xam-xi-ve-ddd-part2-2/10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Có hai quan điểm rất mâu thuẩn ở đây đó là:&lt;/p&gt;
 &lt;ol&gt;
